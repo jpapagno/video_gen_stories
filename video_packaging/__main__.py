@@ -16,6 +16,8 @@ def build(brief):
             raise ValueError("Assembly manifest is not complete")
         facts.update(measured_runtime_seconds=video["duration_seconds"],
                      verified_video_features=video["features"])
+        if video.get("chapters"):
+            facts["verified_chapters"] = video["chapters"]["chapters"]
         for key in ("music", "rain_sound_effects", "burned_captions"):
             if facts[key] != video["features"][key]:
                 raise ValueError(f"Brief contradicts verified video feature: {key}")

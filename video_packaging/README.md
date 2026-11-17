@@ -1,5 +1,11 @@
 # Video packaging
 
+## Description house style
+
+Use the short format in `description.py` and `prompts/package.md`: opening + broad measured duration and listening experience; optional settling-intro sentence; one synopsis paragraph; subscribe to **SleepyStorykeeper**; three hashtags; then chapters. Blank lines separate the sections. There is no duplicate story list, feature list, technical/model commentary, replay explanation, separate AI disclosure or extra disclaimer paragraph. Unofficial fan-created status stays in the synopsis. Provenance stays in metadata.
+
+For videos at least three hours, display verified whole hours rounded down (3:08 becomes “3 hours”). Shorter videos use whole minutes rounded down. Chapter timestamps and hashtags remain plain text for YouTube to link automatically. Returned opening-story chapters display “— Part 2”; internal chapter manifests retain their repeat source. Legacy chapter estimates remain explicitly labelled approximate.
+
 ## Prompt GPT for titles, thumbnail and description
 
 1. Copy `episodes/lemon-balm.json` to `episodes/my-episode.json`. Update the story path, assembly manifest, channel, episode name, universe, main character, narration and visuals. Set music, rain audio and caption flags truthfully; animated rain does not imply rain sound.

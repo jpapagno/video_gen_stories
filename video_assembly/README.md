@@ -1,5 +1,29 @@
 # Video assembly
 
+## Automatic chapters and description
+
+Use `python -m voice.collection` for new multi-story audio. Assembly automatically finds the narration's `.chapters.json`, verifies its audio hash/frame count, adds the actual intro offset and exports `.chapters.json` plus `.chapters.txt` beside the video. Internal timings use sample counts; YouTube text timestamps round down to whole seconds. No word-count timing estimate is used.
+
+Set `description` in the assembly preset to the upload description path, for example `outputs/packaging/my-episode/description.txt`. If omitted, assembly creates/updates `description.txt` beside the video. The generated Chapters block is replaced on reruns while the rest of the description is retained. An optional `audio_chapters` path overrides sidecar discovery. Packaging prompts also receive verified chapter data from the assembly manifest.
+
+Legacy flattened narration without a sidecar continues to assemble, but no exact chapter timings are invented. Any retrospectively estimated timestamps must be explicitly labelled approximate. Tests cover story ordering, repeated audio, gaps, intro offsets, description updates and mismatched audio rejection.
+
+## Standard settling-in intro
+
+Assembly prepends the recording selected in `defaults.json`, with one second of visual lead-in and a 2.8-second pause before the story. The scene stays continuous. Tiny fades at the intro edges prevent clicks; story speech does not overlap the intro. The saved intro is reused for later assemblies.
+
+```powershell
+# Generate the standard intro once with the fixed Wizard V2 speaker.
+.\.venv-qwen\Scripts\python.exe -m voice narrate video_assembly/intros/hogwarts.txt --profile wizard --out outputs/voice/intros/hogwarts-wizard.wav
+
+# Rebuild the collection and update upload metadata.
+.\.venv\Scripts\python.exe -m video_assembly.add_intro --voice-python .venv-qwen/Scripts/python.exe
+```
+
+Presets can override `intro`, `intro_lead_seconds` and `intro_pause_seconds`; set `intro` to null to omit it. The default script mentions Hogwarts: choose another intro for a different setting. Missing intro audio raises a clear error. `--plan-only` reports timing. Assembly receipts record intro duration, story start time and intro audio hash. The collection rebuild preserves the previous video, writes `final-with-intro.mp4`, updates description runtime/replay timing, and records progress in `intro-job-status.json`.
+
+The check `python -m unittest video_assembly.test_intro` verifies actual encoded intro/pause/body timing using the local scene loop.
+
 Purpose: stitch finished narration and a silent looping scene into a watchable episode. Install the CPU dependencies from [installation](../docs/installation.md).
 
 ## Create an episode preset

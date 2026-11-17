@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "preset": {
+    "video": "outputs/animation/lemon-balm/greenhouse-loop.mp4",
+    "audio": "outputs\\videos\\wizard-collection\\narration-with-opening-repeat.wav",
+    "output": "outputs/videos/wizard-collection/final.mp4"
+  },
+  "output": "C:\\Users\\jpapa\\Documents\\ChatGPT\\music videos creation tool\\outputs\\videos\\wizard-collection\\final.mp4",
+  "duration_seconds": 11294.67,
+  "narration_duration_seconds": 11294.5605,
+  "video": {
+    "size": [
+      1920,
+      1080
+    ],
+    "fps": 24.0,
+    "duration": 11294.67,
+    "codec": "h264",
+    "audio_codec": "aac"
+  },
+  "elapsed_seconds": 181.4,
+  "sources": {
+    "audio_sha256": "5f02ea8f24c3116ae619cf7c4c44e33cedaab00f45cce812d3466fc496494a06",
+    "video_sha256": "6fe3ea81a7a3d67e6553174972857da7ad002d1331d0979fd43e4d81e69b5790"
+  },
+  "features": {
+    "spoken_narration": true,
+    "looped_scene": true,
+    "music": false,
+    "rain_sound_effects": false,
+    "burned_captions": false
+  }
+}

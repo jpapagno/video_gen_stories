@@ -1,0 +1,21 @@
+{
+  "title": "Fall Asleep at Hogwarts | 3+ Hours of Cosy Harry Potter Stories",
+  "runtime_seconds": 11322.0,
+  "repeated_story": "The Last Pot of Lemon Balm",
+  "repeat_start_seconds": 9934,
+  "stories": [
+    "The Last Pot of Lemon Balm",
+    "The Window Seat",
+    "The Evening Post",
+    "A Shelf for Small Things",
+    "The Quiet Table",
+    "The Last Page of the Day"
+  ],
+  "thumbnail": "thumbnail-harry-potter-challenge.jpg",
+  "reference_sha256": "8b58826f1f0374391b9546d305cff354e7e3a16a3c1efb238ea431fa774cf1bd",
+  "boundary_note": "Original completed chunks reused; only the mixed-story boundary ending was re-rendered.",
+  "intro_seconds": 27.32,
+  "first_story_start_seconds": 27.32,
+  "video": "C:\\Users\\jpapa\\Documents\\ChatGPT\\music videos creation tool\\outputs\\videos\\wizard-collection\\final-with-intro.mp4",
+  "thumbnail_text": "HARRY POTTER / YOU WON\u2019T LAST / 10 MINUTES AWAKE"
+}

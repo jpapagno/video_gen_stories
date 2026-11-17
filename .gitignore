@@ -12,6 +12,9 @@ public/media/
 !.env.example
 outputs/sleep-story/
 outputs/voice/
+outputs/videos/**/*job-status.json
+outputs/videos/**/*-chunks-*/
+outputs/videos/**/opening-ending.*
 # Local Codex execution event logs are not source assets.
 **/events.jsonl
 transcripts/runtime/
@@ -38,3 +41,5 @@ outputs/*.png
 outputs/*.jpg
 !outputs/packaging/lemon-balm/thumbnail.jpg
 !outputs/packaging/lemon-balm/thumbnail-source.png
+!outputs/packaging/wizard-collection/thumbnail-harry-potter-challenge.jpg
+!outputs/packaging/wizard-collection/thumbnail-harry-potter-challenge-source.png

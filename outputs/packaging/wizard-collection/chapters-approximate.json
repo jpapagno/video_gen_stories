@@ -1,0 +1,37 @@
+{
+  "precision": "approximate legacy transitions; proportional placement within mixed audio chunks",
+  "chapters": [
+    {
+      "title": "Welcome & settling in",
+      "start_seconds": 0.0
+    },
+    {
+      "title": "The Last Pot of Lemon Balm",
+      "start_seconds": 27.32
+    },
+    {
+      "title": "The Window Seat",
+      "start_seconds": 1412.5379364035089
+    },
+    {
+      "title": "The Evening Post",
+      "start_seconds": 3326.1286226591756
+    },
+    {
+      "title": "A Shelf for Small Things",
+      "start_seconds": 4947.987535087717
+    },
+    {
+      "title": "The Quiet Table",
+      "start_seconds": 6490.800291666667
+    },
+    {
+      "title": "The Last Page of the Day",
+      "start_seconds": 8142.407689393945
+    },
+    {
+      "title": "The Last Pot of Lemon Balm \u2014 repeat",
+      "start_seconds": 9934
+    }
+  ]
+}

@@ -4,6 +4,14 @@ Production narration uses **Wizard V2 fixed-reference cloning** with the local Q
 
 ## Render narration
 
+For multi-story episodes use the collection runner instead of flattening all stories into one transcript:
+
+```powershell
+.venv-qwen\Scripts\python -m voice.collection story_creator/stories/wizard-three-hours-20261117/collection.json --out outputs/voice/new-collection.wav --repeat-first
+```
+
+Each story is rendered independently with the same fixed speaker, so chunks cannot cross story boundaries. The runner reuses matching completed story renders, inserts measured gaps and writes `new-collection.chapters.json` with exact start frames and an audio hash. Repeating the opening reuses its audio rather than generating it again. This is the standard collection path for automatic chapters; the single-story `voice narrate` command remains available. Do not rerun the existing collection simply to obtain timestamps unless you intend to re-render it.
+
 From the project root after following [installation](../docs/installation.md):
 
 ```powershell

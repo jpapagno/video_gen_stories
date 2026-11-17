@@ -1,0 +1,5 @@
+{
+  "intro": "outputs/voice/intros/hogwarts-wizard.wav",
+  "intro_lead_seconds": 1.0,
+  "intro_pause_seconds": 2.8
+}

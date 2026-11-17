@@ -1,0 +1,8 @@
+{
+  "video": "outputs/animation/lemon-balm/greenhouse-loop.mp4",
+  "audio": "outputs\\videos\\wizard-collection\\narration-with-opening-repeat.wav",
+  "output": "outputs/videos/wizard-collection/final-with-intro.mp4",
+  "intro": "outputs/voice/intros/hogwarts-wizard.wav",
+  "intro_lead_seconds": 1.0,
+  "intro_pause_seconds": 2.8
+}

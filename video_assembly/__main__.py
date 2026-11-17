@@ -11,6 +11,23 @@ import imageio_ffmpeg
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def intro_settings(config):
+    defaults = json.loads((Path(__file__).parent / "defaults.json").read_text(encoding="utf-8"))
+    selected = {**defaults, **config}
+    if not selected.get("intro"):
+        return {"file": None, "seconds": 0, "lead": 0, "pause": 0, "story_start_seconds": 0}
+    path = ROOT / selected["intro"]
+    if not path.exists():
+        raise FileNotFoundError(f"Generate the standard intro first: {path}; see video_assembly/README.md")
+    with wave.open(str(path), "rb") as audio:
+        seconds = audio.getnframes() / audio.getframerate()
+    lead, pause = float(selected["intro_lead_seconds"]), float(selected["intro_pause_seconds"])
+    if seconds <= 0 or min(lead, pause) < 0:
+        raise ValueError("Intro must be nonempty and pauses nonnegative")
+    return {"file": str(path), "seconds": seconds, "lead": lead, "pause": pause,
+            "story_start_seconds": seconds + lead + pause}
+
+
 def video_info(path):
     reader = imageio_ffmpeg.read_frames(str(path), pix_fmt="rgb24")
     try:
@@ -39,8 +56,14 @@ def main():
     args = parser.parse_args()
     config = json.loads(args.preset.read_text(encoding="utf-8"))
     video, audio, output, duration, source_info = plan(config)
+    intro = intro_settings(config)
+    body_duration = duration
+    duration += intro["story_start_seconds"]
+    from .chapters import load_audio_chapters, export_chapters
+    chapter_data = load_audio_chapters(audio, ROOT / config["audio_chapters"] if config.get("audio_chapters") else None)
     print(json.dumps({"output": str(output), "narration_minutes": round(duration / 60, 2),
-                      "video_loop_seconds": source_info["duration"], "video_stream_copy": True}, indent=2), flush=True)
+                      "video_loop_seconds": source_info["duration"], "video_stream_copy": True,
+                      "intro": intro}, indent=2), flush=True)
     if args.plan_only:
         return
     if output.exists():
@@ -51,8 +74,16 @@ def main():
     # Explicit maps discard any accidental audio in the animation. Do not loop
     # narration, add music, burn captions or silently pad the episode's runtime.
     command = [imageio_ffmpeg.get_ffmpeg_exe(), "-hide_banner", "-loglevel", "warning", "-y",
-               "-stream_loop", "-1", "-i", str(video), "-i", str(audio),
-               "-map", "0:v:0", "-map", "1:a:0", "-c:v", "copy",
+               "-stream_loop", "-1", "-i", str(video), "-i", str(audio)]
+    if intro["file"]:
+        command += ["-i", intro["file"], "-filter_complex",
+                    f"[2:a]afade=t=in:d=0.03,afade=t=out:st={max(0, intro['seconds']-.03)}:d=0.03,"
+                    f"adelay={round(intro['lead']*1000)}:all=1,apad=pad_dur={intro['pause']}[intro];"
+                    "[intro][1:a]concat=n=2:v=0:a=1[audio]",
+                    "-map", "0:v:0", "-map", "[audio]"]
+    else:
+        command += ["-map", "0:v:0", "-map", "1:a:0"]
+    command += ["-c:v", "copy",
                "-c:a", "aac", "-b:a", "192k", "-t", str(duration),
                "-movflags", "+faststart", str(temporary)]
     with output.with_suffix(".assembly.log").open("w", encoding="utf-8") as log:
@@ -63,12 +94,22 @@ def main():
     temporary.replace(output)
     manifest = {"status": "complete", "preset": config, "output": str(output),
                 "duration_seconds": info["duration"], "narration_duration_seconds": duration,
+                "body_narration_seconds": body_duration, "intro": intro,
                 "video": info, "elapsed_seconds": round(time.monotonic() - start, 2),
                 "sources": {"audio_sha256": hashlib.sha256(audio.read_bytes()).hexdigest(),
                             "video_sha256": hashlib.sha256(video.read_bytes()).hexdigest()},
                 "features": {"spoken_narration": True, "looped_scene": True,
-                             "music": False, "rain_sound_effects": False, "burned_captions": False}}
+                             "music": False, "rain_sound_effects": False, "burned_captions": False,
+                             "settling_intro": bool(intro["file"])}}
+    if intro["file"]:
+        manifest["sources"]["intro_sha256"] = hashlib.sha256(Path(intro["file"]).read_bytes()).hexdigest()
     output.with_suffix(".json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+    description = ROOT / config["description"] if config.get("description") else output.parent / "description.txt"
+    chapters = export_chapters(output, chapter_data, intro, description)
+    if chapters:
+        manifest["chapters"] = chapters
+        manifest["description"] = str(description)
+        output.with_suffix(".json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
     print(f"Saved {output}", flush=True)
 
 
