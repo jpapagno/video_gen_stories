@@ -1,0 +1,81 @@
+{
+  "workflow": "focused-blocks-v1",
+  "system": "You write plain, comforting bedtime narration for adults. Write in second person and present tense, with a natural independent voice.\n\nWrite ONLY THE CURRENT BLOCK. Aim for 230\u2013270 words in four or five short paragraphs. Keep sentences mostly between 10 and 25 words, never longer than 35 words. Use ordinary words and physical actions. Sensory details must come from what the visitor actually notices or does. A single useful detail is better than a list of adjectives.\n\nFor example, this small action has a clear sequence: 'You turn the cup by its handle until the small chip faces away. Elian moves the teapot nearer, leaving room for your notebook.' Learn the method; do not copy its wording or introduce cups, Elian, or notebooks unless the current block permits them.\n\nRespect the allowed people, objects and end state exactly. Do not anticipate the next block. Never invent an encounter or move an object simply to extend the text. Avoid threats, fear, urgency, uncanny personification, 'empty mouths', cold attacks, or ominous shadows. Avoid explaining that the listener feels safe or has nothing to do. Show a comfortable situation through concrete details.\n\nNo headings, markdown, summaries, word counts, reasoning or commentary. Return only new story prose, with no repetition of the previous text.\n",
+  "facts": [
+    "You are an unnamed adult magical cartographer visiting Hogwarts by invitation.",
+    "It is one rainy autumn evening; no thunder, danger or hurry.",
+    "You wear a damp blue wool coat throughout this scene. Do not remove, hang, dry or fold it.",
+    "You are alone. No named or unnamed person enters, speaks, appears or is introduced. Elian is not present.",
+    "No dialogue. No key, atlas, brush, lamp, tea, luggage, personal umbrella or new magical rule.",
+    "The door is wooden, closed but unlatched until block 2. It opens onto the stone entrance hall.",
+    "The clean towel remains folded and untouched until the scene ends. Do not dry your hands."
+  ],
+  "blocks": [
+    {
+      "id": 1,
+      "start": "approaching the sheltered stone arch outside Hogwarts on a rainy autumn evening",
+      "actions": [
+        "Walk the last few paces beneath the arch.",
+        "Notice how the rain sound changes beneath shelter.",
+        "Reach the closed but unlatched wooden inner door, without opening it yet."
+      ],
+      "end": "standing sheltered beside the wooden inner door, blue wool coat still worn and damp"
+    },
+    {
+      "id": 2,
+      "start": "standing sheltered beside the wooden inner door, coat still worn and damp",
+      "actions": [
+        "Open the unlatched door using its brass pull.",
+        "Step into the entrance hall and let the door close gently.",
+        "Notice the dry stone floor and a few steady floating candles."
+      ],
+      "end": "just inside the entrance hall, hands still damp, coat still worn"
+    },
+    {
+      "id": 3,
+      "start": "just inside the entrance hall, hands damp and coat still worn",
+      "actions": [
+        "Pause and look around this ordinary welcoming space.",
+        "Notice an umbrella stand and a wooden stool nearby.",
+        "Discover a clean folded towel on the stool; stop before touching it."
+      ],
+      "end": "inside the hall, noticing the folded towel, hands still damp and coat still worn"
+    }
+  ],
+  "prompt": "LOCKED FACTS\n[\"You are an unnamed adult magical cartographer visiting Hogwarts by invitation.\", \"It is one rainy autumn evening; no thunder, danger or hurry.\", \"You wear a damp blue wool coat throughout this scene. Do not remove, hang, dry or fold it.\", \"You are alone. No named or unnamed person enters, speaks, appears or is introduced. Elian is not present.\", \"No dialogue. No key, atlas, brush, lamp, tea, luggage, personal umbrella or new magical rule.\", \"The door is wooden, closed but unlatched until block 2. It opens onto the stone entrance hall.\", \"The clean towel remains folded and untouched until the scene ends. Do not dry your hands.\"]\nPLANNED BLOCKS\n[{\"id\": 1, \"start\": \"approaching the sheltered stone arch outside Hogwarts on a rainy autumn evening\", \"actions\": [\"Walk the last few paces beneath the arch.\", \"Notice how the rain sound changes beneath shelter.\", \"Reach the closed but unlatched wooden inner door, without opening it yet.\"], \"end\": \"standing sheltered beside the wooden inner door, blue wool coat still worn and damp\"}, {\"id\": 2, \"start\": \"standing sheltered beside the wooden inner door, coat still worn and damp\", \"actions\": [\"Open the unlatched door using its brass pull.\", \"Step into the entrance hall and let the door close gently.\", \"Notice the dry stone floor and a few steady floating candles.\"], \"end\": \"just inside the entrance hall, hands still damp, coat still worn\"}, {\"id\": 3, \"start\": \"just inside the entrance hall, hands damp and coat still worn\", \"actions\": [\"Pause and look around this ordinary welcoming space.\", \"Notice an umbrella stand and a wooden stool nearby.\", \"Discover a clean folded towel on the stool; stop before touching it.\"], \"end\": \"inside the hall, noticing the folded towel, hands still damp and coat still worn\"}]",
+  "scene_id": "ch01-s01",
+  "prompt_variant": "c",
+  "benchmark_case": "arrival",
+  "options": {
+    "seed": 42,
+    "temperature": 0.65,
+    "top_p": 0.9,
+    "top_k": 40,
+    "repeat_penalty": 1.0,
+    "num_ctx": 8192,
+    "num_predict": 600,
+    "num_thread": 4,
+    "num_gpu": 0,
+    "presence_penalty": 0.0
+  },
+  "model": {
+    "tag": "qwen3.5:4b",
+    "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "details": {
+      "parent_model": "model.gguf",
+      "format": "gguf",
+      "family": "qwen35",
+      "families": [
+        "qwen35"
+      ],
+      "parameter_size": "4.2B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 262144,
+      "embedding_length": 2560,
+      "runner": "llamacpp"
+    },
+    "runtime": {
+      "version": "0.40.16"
+    }
+  }
+}

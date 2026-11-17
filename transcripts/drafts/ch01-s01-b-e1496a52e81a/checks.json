@@ -1,0 +1,19 @@
+{
+  "word_count": 801,
+  "hard_checks_pass": true,
+  "errors": [],
+  "warnings": [],
+  "comfort_word_counts": {
+    "soft": 0,
+    "softly": 0,
+    "gentle": 0,
+    "gently": 0,
+    "warm": 0,
+    "quiet": 1,
+    "quietly": 0,
+    "settle": 0,
+    "settles": 0
+  },
+  "status": "needs_human_review",
+  "note": "Automated checks cannot establish continuity, required-beat coverage or literary quality."
+}

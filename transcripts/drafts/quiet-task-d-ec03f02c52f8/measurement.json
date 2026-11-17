@@ -1,0 +1,104 @@
+{
+  "metrics": {
+    "word_count": 752,
+    "sentence_count_estimate": 46,
+    "sentence_words_p10": 12.0,
+    "sentence_words_median": 17.0,
+    "sentence_words_p90": 19.5,
+    "sentence_words_p95": 21.5,
+    "sentence_words_max": 25,
+    "sentences_over_40_fraction": 0.0,
+    "sentences_under_8_fraction": 0.0,
+    "question_sentence_fraction": 0.0,
+    "sentence_opening_top_bigram_fraction": 0.06521739130434782,
+    "mattr_100": 0.7372727272727272,
+    "repeated_8gram_token_fraction": 0.12080536912751678,
+    "scenic_cues_per_1000": 34.57446808510638,
+    "dialogue_tag_cues_per_1000": 0.0,
+    "past_auxiliary_cues_per_1000": 0.0,
+    "present_auxiliary_cues_per_1000": 1.3297872340425532,
+    "first_person_pronouns_per_1000": 0.0,
+    "second_person_pronouns_per_1000": 0.0,
+    "third_person_pronouns_per_1000": 31.914893617021274,
+    "sight_cues_per_1000": 13.297872340425531,
+    "sound_cues_per_1000": 9.308510638297872,
+    "touch_cues_per_1000": 13.297872340425531,
+    "smell_cues_per_1000": 2.6595744680851063,
+    "taste_cues_per_1000": 13.297872340425531
+  },
+  "checks": {
+    "word_count": 746,
+    "longest_sentence_words": 25,
+    "hard_checks_pass": false,
+    "errors": [
+      "Repeated complete sentences: the metal catches a faint glint from the green-shaded brass lamp hanging above | steam rises slowly from the ceramic curling upward into the quiet air | elian steps back letting the tools settle into their final resting place on the table"
+    ],
+    "warnings": [
+      "Repeated 10-word phrases: on the oak worktable ensuring the lid clicks shut with | the oak worktable ensuring the lid clicks shut with a | oak worktable ensuring the lid clicks shut with a soft"
+    ],
+    "comfort_word_counts": {
+      "soft": 2,
+      "softly": 1,
+      "gentle": 2,
+      "gently": 1,
+      "warm": 0,
+      "quiet": 4,
+      "quietly": 0,
+      "settle": 2,
+      "settles": 1
+    },
+    "status": "needs_human_review",
+    "note": "Automated checks cannot establish continuity, required-beat coverage or literary quality."
+  },
+  "ranges": {
+    "sentence_words_median": {
+      "draft": 17.0,
+      "guidance": [
+        10,
+        19
+      ],
+      "inside_guidance": true
+    },
+    "sentence_words_p90": {
+      "draft": 19.5,
+      "guidance": [
+        21,
+        33
+      ],
+      "inside_guidance": false
+    },
+    "sentences_over_40_fraction": {
+      "draft": 0.0,
+      "guidance": [
+        0,
+        0.025
+      ],
+      "inside_guidance": true
+    },
+    "mattr_100": {
+      "draft": 0.7372727272727272,
+      "guidance": [
+        0.76,
+        0.82
+      ],
+      "inside_guidance": false
+    },
+    "sentence_opening_top_bigram_fraction": {
+      "draft": 0.06521739130434782,
+      "guidance": [
+        0.02,
+        0.07
+      ],
+      "inside_guidance": true
+    },
+    "repeated_8gram_token_fraction": {
+      "draft": 0.12080536912751678,
+      "guidance": [
+        0,
+        0.01
+      ],
+      "inside_guidance": false
+    }
+  },
+  "status": "needs_editorial_and_user_review; metric resemblance is not a quality score"
+}

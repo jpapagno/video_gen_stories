@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "preset": {
+    "video": "outputs/animation/lemon-balm/greenhouse-loop.mp4",
+    "audio": "outputs/voice/last-pot-of-lemon-balm-wizard.wav",
+    "output": "outputs/videos/lemon-balm/final.mp4"
+  },
+  "output": "C:\\Users\\jpapa\\Documents\\ChatGPT\\music videos creation tool\\outputs\\videos\\lemon-balm\\final.mp4",
+  "duration_seconds": 1637.04,
+  "narration_duration_seconds": 1636.92,
+  "video": {
+    "size": [
+      1920,
+      1080
+    ],
+    "fps": 24.0,
+    "duration": 1637.04,
+    "codec": "h264",
+    "audio_codec": "aac"
+  },
+  "elapsed_seconds": 26.9,
+  "sources": {
+    "audio_sha256": "ee4ec3ffcb15b777af9e5f9f732d169743d6152efa75e6af4cfb00d96cbaddf9",
+    "video_sha256": "6fe3ea81a7a3d67e6553174972857da7ad002d1331d0979fd43e4d81e69b5790"
+  },
+  "features": {
+    "spoken_narration": true,
+    "looped_scene": true,
+    "music": false,
+    "rain_sound_effects": false,
+    "burned_captions": false
+  }
+}

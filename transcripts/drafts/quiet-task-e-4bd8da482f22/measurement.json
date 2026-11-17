@@ -1,0 +1,52 @@
+{
+  "file": "C:\\Users\\jpapa\\Documents\\ChatGPT\\music videos creation tool\\transcripts\\drafts\\quiet-task-e-4bd8da482f22\\story.txt",
+  "metrics": {
+    "word_count": 818,
+    "sentence_count_estimate": 44,
+    "sentence_words_p10": 14.3,
+    "sentence_words_median": 18.0,
+    "sentence_words_p90": 23.700000000000003,
+    "sentence_words_p95": 24.85,
+    "sentence_words_max": 28,
+    "sentences_over_40_fraction": 0.0,
+    "sentences_under_8_fraction": 0.0,
+    "question_sentence_fraction": 0.0,
+    "sentence_opening_top_bigram_fraction": 0.06818181818181818,
+    "mattr_100": 0.7569444444444444,
+    "repeated_8gram_token_fraction": 0.0,
+    "scenic_cues_per_1000": 37.89731051344744,
+    "dialogue_tag_cues_per_1000": 1.2224938875305624,
+    "past_auxiliary_cues_per_1000": 1.2224938875305624,
+    "present_auxiliary_cues_per_1000": 1.2224938875305624,
+    "first_person_pronouns_per_1000": 0.0,
+    "second_person_pronouns_per_1000": 0.0,
+    "third_person_pronouns_per_1000": 37.89731051344744,
+    "sight_cues_per_1000": 25.672371638141808,
+    "sound_cues_per_1000": 12.224938875305625,
+    "touch_cues_per_1000": 17.114914425427873,
+    "smell_cues_per_1000": 3.667481662591687,
+    "taste_cues_per_1000": 3.667481662591687
+  },
+  "checks": {
+    "word_count": 813,
+    "longest_sentence_words": 27,
+    "hard_checks_pass": true,
+    "errors": [],
+    "warnings": [],
+    "comfort_word_counts": {
+      "soft": 2,
+      "softly": 3,
+      "gentle": 1,
+      "gently": 0,
+      "warm": 0,
+      "quiet": 5,
+      "quietly": 1,
+      "settle": 1,
+      "settles": 0
+    },
+    "status": "needs_human_review",
+    "note": "Automated checks cannot establish continuity, required-beat coverage or literary quality."
+  },
+  "status": "needs_editorial_and_user_review",
+  "elapsed_generation_seconds": 261.9028405
+}

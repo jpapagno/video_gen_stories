@@ -1,0 +1,21 @@
+{
+  "word_count": 1029,
+  "hard_checks_pass": false,
+  "errors": [
+    "Word count 1029 is outside 600\u2013900."
+  ],
+  "warnings": [],
+  "comfort_word_counts": {
+    "soft": 1,
+    "softly": 2,
+    "gentle": 0,
+    "gently": 0,
+    "warm": 0,
+    "quiet": 3,
+    "quietly": 0,
+    "settle": 0,
+    "settles": 0
+  },
+  "status": "needs_human_review",
+  "note": "Automated checks cannot establish continuity, required-beat coverage or literary quality."
+}

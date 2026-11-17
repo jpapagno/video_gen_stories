@@ -1,0 +1,4 @@
+# CPU dependencies for animation and video assembly; story preparation is stdlib.
+numpy==2.5.4
+scipy>=1.17,<2
+imageio-ffmpeg==0.8.1

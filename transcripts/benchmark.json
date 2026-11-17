@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "note": "Isolated hypothetical scene contexts for prompt testing; not accepted story continuity.",
+  "cases": [
+    {
+      "id": "arrival",
+      "scene_id": "ch01-s01",
+      "tests": [
+        "atmosphere without cliche",
+        "clear physical progression",
+        "no early map-room exposition"
+      ],
+      "facts": [
+        "Rowan is outside Hogwarts at the start.",
+        "The blue coat is still damp and being worn.",
+        "No key, lamp or atlas has been received yet."
+      ],
+      "previous_ending": "",
+      "next_scene": "Dry hands and hang the coat; do not perform those actions yet."
+    },
+    {
+      "id": "quiet-task",
+      "scene_id": "ch03-s02",
+      "tests": [
+        "quiet shared activity without filler",
+        "natural understated dialogue",
+        "tool and object continuity"
+      ],
+      "facts": [
+        "Rowan and Elian are in the map room above the lake.",
+        "The brass cabinet key has been received during tea.",
+        "The green lamp and tea cup are on the oak worktable.",
+        "No atlas page has been opened yet. Elian has not departed."
+      ],
+      "previous_ending": "Rowan sets the cup beside the green lamp and turns toward the small cabinet Elian has indicated.",
+      "next_scene": "Open the orchard atlas page and receive Elian's farewell; do not do those actions yet."
+    },
+    {
+      "id": "transition",
+      "scene_id": "ch09-s03",
+      "tests": [
+        "continuity through a transition",
+        "resists inventing a new mystery",
+        "specific closing actions"
+      ],
+      "facts": [
+        "All four landscape maps are complete.",
+        "The tools are cleaned, ink bottle secured and faded-blue atlas shelved.",
+        "The dry blue coat still hangs in the entrance hall.",
+        "Rowan holds the brass cabinet key; the lamp and empty cup are on the worktable."
+      ],
+      "previous_ending": "The blue binding is back on its shelf, its cloth edge level with the books beside it.",
+      "next_scene": "Leave the map room and walk onto the landing; stop before that walk."
+    },
+    {
+      "id": "ending",
+      "scene_id": "ch12-s03",
+      "tests": [
+        "declining stimulation",
+        "satisfying ending without filler",
+        "no wake-up or new task"
+      ],
+      "facts": [
+        "Rowan is resting in the guest-room bed.",
+        "Coat hangs by the door; brass key is on its dish; lamp is low.",
+        "The completed atlas remains closed in the map-room cabinet.",
+        "No one else is present. The real weather remains quiet autumn rain."
+      ],
+      "previous_ending": "The light reaches only the nearest edge of the table now. Beyond it, the familiar room is dim and still.",
+      "next_scene": "There is no next scene. End the episode without a morning scene."
+    }
+  ]
+}

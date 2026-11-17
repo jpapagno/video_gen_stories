@@ -1,0 +1,36 @@
+{
+  "scene": {
+    "image": "assets/scenes/lemon-balm/greenhouse.png",
+    "output": "outputs/animation/lemon-balm/greenhouse-loop.mp4",
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "seconds": 20,
+    "seed": 42,
+    "rain_drops": 240,
+    "rain_strength": 0.55,
+    "lantern_centre": [
+      0.89,
+      0.56
+    ],
+    "fern_region": [
+      0.0,
+      0.73,
+      0.36,
+      1.0
+    ],
+    "fern_sway_pixels": 3.0
+  },
+  "source_sha256": "aa0fcd48ea0317e7fa91d38266d2a16ef8c5a7a526c80133e5c31fc44f44effe",
+  "frames": 480,
+  "elapsed_seconds": 64.06,
+  "loop_endpoint_pixels_equal": true,
+  "camera": "locked",
+  "audio": false,
+  "effects": [
+    "glass-masked moving rain",
+    "local lantern flame and glow",
+    "foreground fern sway"
+  ],
+  "renderer": "CPU numpy/scipy compositing; ffmpeg libx264"
+}

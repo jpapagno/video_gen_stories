@@ -1,0 +1,26 @@
+{
+  "system": "You write plain, comforting bedtime narration for adults. Write in second person and present tense, with a natural independent voice.\n\nWrite ONLY THE CURRENT BLOCK. Aim for 230\u2013270 words in four or five short paragraphs. Keep sentences mostly between 10 and 25 words, never longer than 35 words. Use ordinary words and physical actions. Sensory details must come from what the visitor actually notices or does. A single useful detail is better than a list of adjectives.\n\nFor example, this small action has a clear sequence: 'You turn the cup by its handle until the small chip faces away. Elian moves the teapot nearer, leaving room for your notebook.' Learn the method; do not copy its wording or introduce cups, Elian, or notebooks unless the current block permits them.\n\nRespect the allowed people, objects and end state exactly. Do not anticipate the next block. Never invent an encounter or move an object simply to extend the text. Avoid threats, fear, urgency, uncanny personification, 'empty mouths', cold attacks, or ominous shadows. Avoid explaining that the listener feels safe or has nothing to do. Show a comfortable situation through concrete details.\n\nNo headings, markdown, summaries, word counts, reasoning or commentary. Return only new story prose, with no repetition of the previous text.\n",
+  "prompt": "LOCKED FACTS\n[\"You are an unnamed adult magical cartographer visiting Hogwarts by invitation.\", \"It is one rainy autumn evening; no thunder, danger or hurry.\", \"You wear a damp blue wool coat throughout this scene. Do not remove, hang, dry or fold it.\", \"You are alone. No named or unnamed person enters, speaks, appears or is introduced. Elian is not present.\", \"No dialogue. No key, atlas, brush, lamp, tea, luggage, personal umbrella or new magical rule.\", \"The door is wooden, closed but unlatched until block 2. It opens onto the stone entrance hall.\", \"The clean towel remains folded and untouched until the scene ends. Do not dry your hands.\"]\nCURRENT BLOCK\n{\"id\": 2, \"start\": \"standing sheltered beside the wooden inner door, coat still worn and damp\", \"actions\": [\"Open the unlatched door using its brass pull.\", \"Step into the entrance hall and let the door close gently.\", \"Notice the dry stone floor and a few steady floating candles.\"], \"end\": \"just inside the entrance hall, hands still damp, coat still worn\"}\nPREVIOUS PROSE (do not repeat)\nYou walk the last few paces beneath the stone arch, the rain heavy against your shoulders. The blue wool coat feels damp and heavy on your skin. You feel the cool air seeping through the fabric as you move forward. The sound of the rain changes here. It becomes softer, less frantic, as the wind stops its howl. You hear only the steady drumming on the slate roof above.\n\nYour boots click softly on the wet stones as you approach the inner door. It is a simple wooden thing, dark and smooth, standing against the wall. The latch is loose, a small metal bar resting gently in its place. You do not touch it yet. You stand still, letting the rhythm of the rain settle into your bones.\n\nThe stone entrance hall waits beyond, quiet and dry. The air smells faintly of old dust and dried leaves. Your breath fogs slightly in the cooler air near the frame. You take another small step, feeling the solid wood beneath your hand if you were to touch it. The door remains closed but ready to open.\n\nYou stand sheltered beside the wooden inner door, your coat still worn and damp. The rain continues its slow, steady drumming just outside the frame. There is no rush, no noise, only the quiet presence of the evening. The world feels still and safe around you. You wait, listening to the world breathe.\nWrite only this block in 230\u2013270 words. Respect its end state and stop.",
+  "options": {
+    "temperature": 0.65,
+    "top_p": 0.9,
+    "top_k": 40,
+    "presence_penalty": 0.0,
+    "repeat_penalty": 1.0,
+    "num_predict": 600,
+    "seed": 42
+  },
+  "generation": {
+    "model": "qwen3.5:4b",
+    "created_at": "2026-11-16T01:26:46.1124224Z",
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 58232511500,
+    "load_duration": 8132800,
+    "prompt_eval_count": 847,
+    "prompt_eval_cached_count": 0,
+    "prompt_eval_duration": 20090778000,
+    "eval_count": 322,
+    "eval_duration": 38121829000
+  }
+}

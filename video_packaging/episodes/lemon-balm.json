@@ -1,0 +1,13 @@
+{
+  "channel": "Sleepy Storykeeper",
+  "story": "story_creator/comparisons/20261116-202422/fixed-story.txt",
+  "assembly_manifest": "outputs/videos/lemon-balm/final.json",
+  "episode_name": "The Last Pot of Lemon Balm",
+  "universe": "Harry Potter; unofficial fan-created original story",
+  "main_character": "Neville Longbottom, teaching at Hogwarts",
+  "narration": "synthetic, local Qwen3-TTS, saved Wizard V2 direction",
+  "visuals": "looped Hogwarts greenhouse with animated rain, lantern light and fern sway",
+  "music": false,
+  "rain_sound_effects": false,
+  "burned_captions": false
+}

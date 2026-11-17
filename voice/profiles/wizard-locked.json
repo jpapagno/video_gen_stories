@@ -1,0 +1,10 @@
+{
+  "display_name": "Wizard V2 fixed-reference trial",
+  "engine": "voice_clone",
+  "reference_audio": "media/qwen/WizardReference/reference.wav",
+  "reference_text": "Beyond the window, the rain moves softly across the lake. You settle into the comfortable chair, your hands warm around the cup. There is nothing left to finish this evening. The lamp shines gently on the page, and the castle rests around you.",
+  "reference_sha256": "8b58826f1f0374391b9546d305cff354e7e3a16a3c1efb238ea431fa774cf1bd",
+  "source": "outputs/sleep-story/qwen/reference-iterations/v2-low-rounded.wav",
+  "model": "media/qwen/Base",
+  "note": "Experimental; does not replace the selected wizard profile until listening review."
+}

@@ -1,0 +1,14 @@
+{
+  "image": "assets/scenes/lemon-balm/greenhouse.png",
+  "output": "outputs/animation/lemon-balm/greenhouse-loop.mp4",
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "seconds": 20,
+  "seed": 42,
+  "rain_drops": 240,
+  "rain_strength": 0.55,
+  "lantern_centre": [0.89, 0.56],
+  "fern_region": [0.0, 0.73, 0.36, 1.0],
+  "fern_sway_pixels": 3.0
+}

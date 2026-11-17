@@ -1,0 +1,17 @@
+{
+  "source_url": "https://www.youtube.com/watch?v=sOS9aOIXPEk",
+  "excerpt_source_seconds": [85, 100],
+  "review_method": "Half-second contact sheet plus frames around candidate cuts; not a frame-by-frame count of animation drawings",
+  "reviewed_cut_times_relative_seconds": [1.04, 5.64, 8.64, 10.8, 11.8],
+  "rejected_automatic_candidates": [2.96, 11.4],
+  "shots": [
+    {"start": 0, "end": 1.04, "framing": "Torso/hand detail", "action": "Hand on chest; small gesture changes"},
+    {"start": 1.04, "end": 5.64, "framing": "Face close-up becoming two-person framing", "action": "Hands rise to mouth, lower; head turns; framing shifts to include another character", "camera": "Visible reframing; not counted as a cut"},
+    {"start": 5.64, "end": 8.64, "framing": "Low-angle face close-up", "action": "Subtle eyes/mouth changes with held head pose"},
+    {"start": 8.64, "end": 10.8, "framing": "Face close-up", "action": "Gaze and expression shift; head lowers"},
+    {"start": 10.8, "end": 11.8, "framing": "Hand detail", "action": "Fist moves/clenches"},
+    {"start": 11.8, "end": 15, "framing": "Wide group/environment", "action": "Mostly held ensemble composition"}
+  ],
+  "not_measured": ["Exact unique drawings per second", "Exact character screen coverage", "True camera trajectory", "Phoneme alignment", "True completely held drawing duration"],
+  "notes": "Semantic action descriptions are visual observations, not estimated animation FPS. Fine timing inside shots remains approximate. Audio beats not manually reviewed."
+}

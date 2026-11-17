@@ -1,0 +1,16 @@
+{
+  "chunks": [
+    "The rain in the village of Whistlewick did not fall so much as it drifted, a mist of silver-grey that clung to the cobblestones and turned the gaslamps into soft, glowing orbs. It was late, the kind of hour where the world seems to hold its breath, waiting for the moon to fully crest the rooftops. Inside the high, arched windows of St.",
+    "Jude's School for the Arts of Everyday Magic, the heavy oak doors were locked, and the fire in the central hearth crackled with a gentle, rhythmic pop, sending up spirals of emerald smoke that smelled faintly of dried lavender and old paper. At the foot of the grand staircase stood Elara Vance, a woman whose hair was the colour of steeped tea and whose robes were patched with care rather than vanity."
+  ],
+  "profile": {
+    "name": "v2-low-rounded",
+    "seed": 42,
+    "instruction": "A mature British male bedtime narrator. Low, rounded, velvety baritone with a gentle Southern English accent. Speak slowly and softly, with almost level intonation and relaxed pauses. Intimate and slightly breathy, with smooth gentle consonants. No gravel, rasp, theatrical projection or sharp sibilance. Warm, understated late-night storytelling, not whispering."
+  },
+  "model": "media/qwen/VoiceDesign",
+  "max_new_tokens": 1500,
+  "temperature": 0.8,
+  "top_p": 0.9,
+  "note": "Raw VoiceDesign with V6 direction; independent chunks may vary in identity. V6 audition cleanup is not applied."
+}

@@ -1,0 +1,21 @@
+{
+  "word_count": 795,
+  "longest_sentence_words": 18,
+  "hard_checks_pass": true,
+  "errors": [],
+  "warnings": [],
+  "comfort_word_counts": {
+    "soft": 3,
+    "softly": 2,
+    "gentle": 1,
+    "gently": 2,
+    "warm": 2,
+    "quiet": 4,
+    "quietly": 0,
+    "settle": 2,
+    "settles": 1
+  },
+  "status": "needs_human_review",
+  "note": "Automated checks cannot establish continuity, required-beat coverage or literary quality.",
+  "block_problems": []
+}

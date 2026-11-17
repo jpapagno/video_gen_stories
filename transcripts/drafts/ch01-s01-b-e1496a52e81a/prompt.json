@@ -1,0 +1,52 @@
+{
+  "system": "You write original, comforting bedtime fiction for an adult listener.\n\nNarrate in second person, present tense. Use an independent, warm, plain voice that sounds natural when read aloud. Follow all locked facts and the current scene's boundaries.\n\nBuild each paragraph around a concrete action, observation, or short exchange. Select one or two sensory details that matter to that action. Let practical kindness and completed small tasks establish comfort. Use mostly narration, a little ordinary dialogue, and varied sentence lengths. Let the scene move without introducing suspense.\n\nThe following are provisional examples of the editorial qualities to aim for. Learn their method; do not reuse their wording, objects, events or distinctive phrases unless the scene brief independently requires them.\n\nACTION WITH SENSORY DETAIL:\nYou turn the cup by its handle until the small chip in its rim faces away. Beneath the saucer, the table feels faintly warm. Elian shifts the teapot nearer, leaving room for your notebook.\n\nUNDERSTATED DIALOGUE:\n'Just the tip of the brush,' he says. He tries it first on the margin, where the silver makes a mark no wider than a thread. You find a comfortable place for your wrist and follow his example.\n\nQUIET TRANSITION:\nYou return the brush to its little dish and fold the cloth over the bottle. The next shelf can wait while you finish the page already open before you.\n\nAvoid empty comfort language, inventories of cozy objects, prolonged personification, and multiple metaphors for one thing. Avoid repeating 'soft', 'gentle', 'warm', 'quiet', 'settle', and 'there is no need' as substitutes for specific writing. These words are allowed when useful, not forbidden vocabulary.\n\nThere is no danger, villain, deadline, dramatic spell, startling noise, cliffhanger, or health promise. Do not invent named characters or magical rules. Keep dialogue and novelty proportional to the chapter's stage; in the last chapter both should be minimal.\n\nCover every required beat through believable small actions. Finish precisely at the scene's required ending. Do not tell the listener to sleep, summarize what they should feel, finish the episode early, or begin the next scene. Aim for 750 words, within 600\u2013900. Add meaningful activity and observation rather than padding.\n\nReturn only the story prose. No headings, markdown, word counts, explanation or reasoning.\n",
+  "prompt": "STORY BIBLE\n# The Room Where Maps Sleep \u2014 story bible v1\n\nOriginal, unofficial fan fiction set at Hogwarts, with new principal characters and an original plot. Use an independent narrative voice. The atlas room, its custodian, and its magic are inventions for this story.\n\n## Premise\n\nYou are an adult magical cartographer, visiting Hogwarts during a quiet autumn holiday to tend its seasonal landscape maps. Over one rainy evening, you settle several small enchanted landscapes for the night. Elian Vale, the elderly custodian, welcomes you and explains the work. Care, patient observation, and simple household magic bring each task to a comfortable conclusion. The evening ends in a guest room; the narration gradually settles without awakening the listener.\n\n## Locked facts\n\n- Narrator: second person, present tense; an unnamed adult visitor, not a student.\n- Only named principal character: Elian Vale, elderly male map custodian; warm, practical, understated.\n- Time/weather: one autumn evening continuing into night; fine rain, no thunder or sudden weather change.\n- Clothing: blue wool coat, damp at arrival, dried on an entrance-hall brass hook, collected on the final walk to the guest room.\n- Objects: a green-shaded brass lamp; a faded-blue-cloth atlas; silver ink; a soft brush; apple-scented tea; brass map-cabinet key supplied by Elian during the welcome.\n- Geography: entrance hall \u2192 small tea room \u2192 map room above the Black Lake \u2192 portrait corridor \u2192 guest room.\n- Elian departs after orienting you in the map room. No surprise return or new conversation with him later.\n- Magic: maps contain tiny, gently moving painted landscapes. A small amount of silver ink helps familiar details settle at night. No portal travel, sentient threat, prophecy, or secret puzzle.\n- Guests may use ordinary household charms; every activity is safe, voluntary, and unhurried.\n- Key/coat are not already in the guest room before they are carried there. The guest-room door remains an ordinary comfortable door.\n\n## Narrative voice\n\nPlain, warm prose intended to be read aloud. Mix short and medium sentences, allowing occasional longer sentences that stay easy to follow. Sensory details should arise from something the visitor touches, tends, watches, or hears. Use a small amount of ordinary dialogue. Let people reveal kindness through practical actions.\n\nEvery scene has a small task or transition. A description supports that movement. Avoid a catalogue of cozy objects or paragraphs that restate the same mood. Let quiet satisfaction replace suspense.\n\nThe early chapters can introduce details. The last quarter should reduce novelty and dialogue. The final chapter introduces no new character, task, magical rule, destination, or promise of an adventure tomorrow.\n\n## Boundaries\n\nNo danger, villain, chase, violence, examinations, deadlines, threatening mystery, cliffhanger, loud surprise, or dramatic spell. No waking the listener at the end. No commands to sleep, breathing exercises, or health claims. Do not retell a book/film plot, borrow dialogue, or imitate a particular author's prose. Familiar Hogwarts locations and ordinary magical details can anchor the setting; the new maps and characters carry the story.\n\nAvoid repeated assurances such as 'there is nothing you need to do' and 'there is no need to hurry.' Show safety once through the situation instead of explaining it in every scene. Avoid ending every scene with a lamp, rain, warmth, or 'the castle around you.' Repeated motifs are welcome when their meaning or use develops.\n\n## Length and structure\n\n12 chapters \u00d7 3 scenes \u00d7 approximately 750 words = approximately 27,000 words. At the provisional 136 words/minute voice pace this is about 198.5 minutes. This is a planning estimate; actual encoded audio must exceed 10,800 seconds. Do not pad the ending or loop scenes to meet runtime.\n\nThe existing 632-word prototype is a tone reference, not the start of the expanded draft and not a replacement for the new scene outline. Drafts remain separate until reviewed. Text examples supplied in prompt B are provisional editorial examples, not user-approved passages.\n\n\nEPISODE DIRECTION\n[{\"id\": \"ch01\", \"title\": \"The light beyond the rain\", \"purpose\": \"Arrival and shelter\"}, {\"id\": \"ch02\", \"title\": \"Tea before the work\", \"purpose\": \"An invitation without urgency\"}, {\"id\": \"ch03\", \"title\": \"The room above the lake\", \"purpose\": \"Learn the tools and room\"}, {\"id\": \"ch04\", \"title\": \"Silver along the paths\", \"purpose\": \"Care for the orchard map\"}, {\"id\": \"ch05\", \"title\": \"The winter village\", \"purpose\": \"Settle a new quiet landscape\"}, {\"id\": \"ch06\", \"title\": \"A seat over the water\", \"purpose\": \"A restful interval\"}, {\"id\": \"ch07\", \"title\": \"The greenhouse after dusk\", \"purpose\": \"Tend small leaves and paths\"}, {\"id\": \"ch08\", \"title\": \"The river keeps its stars\", \"purpose\": \"Finish the last landscape\"}, {\"id\": \"ch09\", \"title\": \"Atlases at rest\", \"purpose\": \"Close the evening work\"}, {\"id\": \"ch10\", \"title\": \"The portrait corridor\", \"purpose\": \"Walk toward the guest room\"}, {\"id\": \"ch11\", \"title\": \"A room prepared\", \"purpose\": \"Settle into the guest room\"}, {\"id\": \"ch12\", \"title\": \"The castle rests\", \"purpose\": \"Reduce detail and leave a settled ending\"}]\n\nCURRENT SCENE\n{\"id\": \"ch01-s01\", \"title\": \"Under the arch\", \"chapter_id\": \"ch01\", \"sequence\": 1, \"starting_situation\": \"outside the entrance\", \"required_ending\": \"inside the entrance hall\", \"required_beats\": [\"Approach beneath the stone arch and notice the rain change under shelter\", \"Open the already-unlatched inner door\", \"Pause inside and discover the folded towel beside the umbrella stand\"], \"emotional_movement\": \"unfamiliar to sheltered\", \"target_words\": 750, \"next_scene_boundary\": \"Stop at the required ending; do not begin the next outlined activity.\", \"chapter_title\": \"The light beyond the rain\", \"chapter_purpose\": \"Arrival and shelter\"}\n\nCONTINUITY AND HANDOFF\n{\"benchmark_context\": true, \"facts\": [\"The visitor is outside Hogwarts at the start.\", \"The blue coat is still damp and being worn.\", \"No key, lamp or atlas has been received yet.\"], \"previous_ending\": \"\", \"next_scene\": \"Dry hands and hang the coat; do not perform those actions yet.\"}\n\nWrite only this scene, approximately 750 words. End at its required handoff.",
+  "config": {
+    "endpoint": "http://127.0.0.1:11435",
+    "model": "qwen3.5:4b",
+    "think": false,
+    "keep_alive": "5m",
+    "options": {
+      "seed": 42,
+      "temperature": 0.8,
+      "top_p": 0.9,
+      "top_k": 40,
+      "repeat_penalty": 1.08,
+      "num_ctx": 8192,
+      "num_predict": 2200,
+      "num_thread": 4,
+      "num_gpu": 0
+    },
+    "target_words_per_scene": 750,
+    "minimum_scene_words": 600,
+    "maximum_scene_words": 900,
+    "estimated_narration_wpm": 136,
+    "minimum_episode_seconds": 10800,
+    "drafts_directory": "transcripts/drafts",
+    "accepted_directory": "transcripts/chapters"
+  },
+  "model": {
+    "tag": "qwen3.5:4b",
+    "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "details": {
+      "parent_model": "model.gguf",
+      "format": "gguf",
+      "family": "qwen35",
+      "families": [
+        "qwen35"
+      ],
+      "parameter_size": "4.2B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 262144,
+      "embedding_length": 2560,
+      "runner": "llamacpp"
+    },
+    "runtime": {
+      "version": "0.40.16"
+    }
+  },
+  "workflow_version": 1,
+  "scene_id": "ch01-s01",
+  "prompt_variant": "b",
+  "benchmark_case": "arrival"
+}

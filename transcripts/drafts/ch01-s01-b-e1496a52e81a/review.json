@@ -1,0 +1,83 @@
+{
+  "scores": {
+    "read_aloud": 2,
+    "specificity": 3,
+    "gentle_movement": 1,
+    "continuity": 0,
+    "sleep_tone": 1,
+    "freshness": 2
+  },
+  "issues": [
+    {
+      "criterion": "read-aloud",
+      "evidence": "The rain hits your face like a cold sheet of water that demands you stand still to let it soak in before anything else happens.",
+      "problem": "Sentence structure is clunky and unnatural for spoken English; 'before anything else happens' creates unnecessary cognitive load.",
+      "suggestion": "Rewrite as: 'You turn slightly, letting the blue wool coat catch more rain. The dampness already seeps through against your chest.'"
+    },
+    {
+      "criterion": "read-aloud",
+      "evidence": "Elian Vale stands just beyond the archway where two torches cast their orange glow across his face like a second light source added deliberately by someone who knows how things should be arranged inside this place.",
+      "problem": "Overly complex metaphor and convoluted phrasing break immersion; 'added deliberately' feels explanatory rather than descriptive.",
+      "suggestion": "Simplify to: 'Elian Vale stands beyond the arch, where two torches cast an orange glow across his face.'"
+    },
+    {
+      "criterion": "gentle_movement",
+      "evidence": "You swing your legs over the threshold without thinking twice about where your boots will land next.",
+      "problem": "The action is abrupt and lacks sensory grounding; it feels like a jump rather than a slow transition suitable for bedtime reading.",
+      "suggestion": "Describe the movement slowly: 'You lift one foot, then the other. The dry floor beneath them feels solid.'"
+    },
+    {
+      "criterion": "continuity",
+      "evidence": "Elian Vale stands just beyond the archway... He gestures toward a brass hook mounted high on the wall near where his legs would be if he moved forward another step closer than already standing there now observing your arrival.",
+      "problem": "The text contradicts itself regarding Elian's position and movement ('moved forward' vs 'already standing'). It also fails to introduce the coat key or towel mentioned in locked facts until much later, disrupting flow.",
+      "suggestion": "Place Elian at the door. Introduce the brass hook immediately when he gestures: 'He points to a brass hook high on the wall.'"
+    },
+    {
+      "criterion": "sleep_tone",
+      "evidence": "The castle around you... waiting patiently in pools formed by puddles created during storms before drying up under suns that do not exist anymore here at night.",
+      "problem": "Repetitive, abstract phrasing ('sun's that do not exist') and excessive length create a sense of rushing rather than settling. The ending feels forced to hit word count.",
+      "suggestion": "End simply: 'The coat hangs on the hook. You step forward into the dry hall.'"
+    },
+    {
+      "criterion": "freshness",
+      "evidence": "He watches you without speaking at first, letting the silence stretch long enough for you to notice that he is holding something small and flat in one hand while keeping the other free near his side where it might reach for assistance if needed later on.",
+      "problem": "Excessive internal monologue about Elian's potential actions ('if needed later') breaks the calm atmosphere. It feels like analysis rather than observation.",
+      "suggestion": "Show, don't tell: 'He holds a small flat object in one hand.'"
+    },
+    {
+      "criterion": "read-aloud",
+      "evidence": "His voice sounds rough from age but carries no edge that could startle or make you feel like something is wrong with how much water has soaked into your clothes yet again today evening before autumn itself seems ready to claim everything within its reach completely silent in this corner of time and space still holding onto memories made during storms long past.",
+      "problem": "This dialogue tag is a massive, run-on sentence that will confuse the listener. It mixes description, metaphor ('corner of time'), and abstract concepts unnecessarily.",
+      "suggestion": "Break into short sentences: 'His voice sounds rough from age but carries no edge.' 'Autumn waits quietly outside these walls.'"
+    },
+    {
+      "criterion": "continuity",
+      "evidence": "The coat hangs now on its hook without any help from your hands or muscles trying too hard to lift it up again after carrying all that weight through mud and rain together until you found this place exactly as Elian knew it would end today if nothing else changed about how storms behave outside these walls protecting lives inside them one life at a time.",
+      "problem": "The narrative jumps back in time ('until you found') while maintaining present tense. This creates confusion for the reader/listener regarding when events occurred relative to each other.",
+      "suggestion": "Keep strictly linear: 'You lift the coat and hang it on the hook.'"
+    },
+    {
+      "criterion": "read-aloud",
+      "evidence": "...where Elian waits patiently with an expression that says he has seen this exact situation many times over the course of decades passing slowly one day at a time while keeping watch over maps that sleep beneath tables waiting to be tended when someone finally decides enough is enough.",
+      "problem": "The phrase 'decides enough is enough' is awkward phrasing. The sentence structure here creates significant pauses and cognitive load, breaking the flow required for reading aloud.",
+      "suggestion": "Simplify: 'He has seen this situation many times over decades.'"
+    },
+    {
+      "criterion": "read-aloud",
+      "evidence": "...leading further into this building called home for all who need it most when weather turns against them unexpectedly again and again without warning or mercy from nature itself wanting only what comes next after every drop falls down where it belongs waiting patiently in pools formed by puddles created during storms before drying up under suns that do not exist anymore here at night.",
+      "problem": "The final paragraph is a wall of text with no natural breaks. It repeats the 'sun' motif and creates an artificial, forced conclusion rather than a natural transition to the next scene (hanging the coat).",
+      "suggestion": "End on the action: 'You step forward into the dry hall.'"
+    }
+  ],
+  "continuity_proposals": [],
+  "summary": "The draft fails continuity checks due to contradictory descriptions of Elian's position and tense shifts. Read-aloud quality is poor, with long, complex sentences that confuse listeners and repetitive abstract metaphors ('sun that do not exist'). The scene lacks gentle movement; actions are abrupt or over-analyzed internally. It needs significant rewriting for flow and clarity.",
+  "recommendation": "revise",
+  "unverified_evidence": [
+    "Elian Vale stands just beyond the archway... He gestures toward a brass hook mounted high on the wall near where his legs would be if he moved forward another step closer than already standing there now observing your arrival.",
+    "The castle around you... waiting patiently in pools formed by puddles created during storms before drying up under suns that do not exist anymore here at night.",
+    "...where Elian waits patiently with an expression that says he has seen this exact situation many times over the course of decades passing slowly one day at a time while keeping watch over maps that sleep beneath tables waiting to be tended when someone finally decides enough is enough.",
+    "...leading further into this building called home for all who need it most when weather turns against them unexpectedly again and again without warning or mercy from nature itself wanting only what comes next after every drop falls down where it belongs waiting patiently in pools formed by puddles created during storms before drying up under suns that do not exist anymore here at night."
+  ],
+  "status": "local_editorial_estimate_needs_human_review",
+  "done_reason": "stop"
+}

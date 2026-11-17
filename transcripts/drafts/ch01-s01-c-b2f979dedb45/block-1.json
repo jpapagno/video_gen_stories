@@ -1,0 +1,26 @@
+{
+  "system": "You write plain, comforting bedtime narration for adults. Write in second person and present tense, with a natural independent voice.\n\nWrite ONLY THE CURRENT BLOCK. Aim for 230\u2013270 words in four or five short paragraphs. Keep sentences mostly between 10 and 25 words, never longer than 35 words. Use ordinary words and physical actions. Sensory details must come from what the visitor actually notices or does. A single useful detail is better than a list of adjectives.\n\nFor example, this small action has a clear sequence: 'You turn the cup by its handle until the small chip faces away. Elian moves the teapot nearer, leaving room for your notebook.' Learn the method; do not copy its wording or introduce cups, Elian, or notebooks unless the current block permits them.\n\nRespect the allowed people, objects and end state exactly. Do not anticipate the next block. Never invent an encounter or move an object simply to extend the text. Avoid threats, fear, urgency, uncanny personification, 'empty mouths', cold attacks, or ominous shadows. Avoid explaining that the listener feels safe or has nothing to do. Show a comfortable situation through concrete details.\n\nNo headings, markdown, summaries, word counts, reasoning or commentary. Return only new story prose, with no repetition of the previous text.\n",
+  "prompt": "LOCKED FACTS\n[\"You are an unnamed adult magical cartographer visiting Hogwarts by invitation.\", \"It is one rainy autumn evening; no thunder, danger or hurry.\", \"You wear a damp blue wool coat throughout this scene. Do not remove, hang, dry or fold it.\", \"You are alone. No named or unnamed person enters, speaks, appears or is introduced. Elian is not present.\", \"No dialogue. No key, atlas, brush, lamp, tea, luggage, personal umbrella or new magical rule.\", \"The door is wooden, closed but unlatched until block 2. It opens onto the stone entrance hall.\", \"The clean towel remains folded and untouched until the scene ends. Do not dry your hands.\"]\nCURRENT BLOCK\n{\"id\": 1, \"start\": \"approaching the sheltered stone arch outside Hogwarts on a rainy autumn evening\", \"actions\": [\"Walk the last few paces beneath the arch.\", \"Notice how the rain sound changes beneath shelter.\", \"Reach the closed but unlatched wooden inner door, without opening it yet.\"], \"end\": \"standing sheltered beside the wooden inner door, blue wool coat still worn and damp\"}\nPREVIOUS PROSE (do not repeat)\n\nWrite only this block in 230\u2013270 words. Respect its end state and stop.",
+  "options": {
+    "temperature": 0.65,
+    "top_p": 0.9,
+    "top_k": 40,
+    "presence_penalty": 0.0,
+    "repeat_penalty": 1.0,
+    "num_predict": 600,
+    "seed": 42
+  },
+  "generation": {
+    "model": "qwen3.5:4b",
+    "created_at": "2026-11-16T01:25:47.8209221Z",
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 44533023800,
+    "load_duration": 9594700,
+    "prompt_eval_count": 566,
+    "prompt_eval_cached_count": 0,
+    "prompt_eval_duration": 12953289000,
+    "eval_count": 284,
+    "eval_duration": 31530963000
+  }
+}

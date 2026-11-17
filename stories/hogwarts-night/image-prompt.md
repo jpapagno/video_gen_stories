@@ -1,0 +1,5 @@
+# Map room image
+
+Generated with the built-in imagegen tool. Final image: `outputs/sleep-story/kokoro/map-room.png`.
+
+Use case: illustration-story. Create a cinematic 16:9 landscape image for a gentle Hogwarts bedtime story, The Room Where Maps Sleep. An intimate, ancient stone map archive above the Black Lake on a rainy autumn night. A round oak table in foreground holds an open faded-blue-cloth atlas showing a miniature enchanted apple orchard with delicate silver paths and one tiny warmly lit cottage window. A green-shaded brass lamp casts a soft pool of green and amber light onto tactile parchment. A small silver ink bottle, soft brush and cup of apple tea nearby. Tall shelves of rolled parchment, a comfortable upholstered chair, narrow Gothic rain-streaked window overlooking a dark lake and low Scottish hills. No people. Beautiful painterly realism with believable materials and rich subtle details, midnight blue shadows, muted warm amber, quiet safe shelter, dim restful exposure, no bright effects. Wide balanced composition suitable as a long-held sleep-video background. No lettering, logos, watermark or title.

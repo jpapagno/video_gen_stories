@@ -1,0 +1,16 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "requested_ui_equivalent": "Light",
+  "elapsed_seconds": 297.98675099998945,
+  "exit_code": 0,
+  "credit_charge": "Not exposed as an authoritative charge by this runner",
+  "usage": {
+    "input_tokens": 15022,
+    "cached_input_tokens": 12288,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 4950,
+    "reasoning_output_tokens": 38
+  },
+  "words_including_title": 3952
+}

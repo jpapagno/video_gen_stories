@@ -1,0 +1,144 @@
+{
+  "system": "Write an original, quietly engaging bedtime scene in third person, present tense. Follow Rowan, an adult visiting cartographer, and Elian Vale, the map custodian. This is an invented story at Hogwarts, not a retelling of an existing plot.\n\nUse this format: a concrete place and a modest intention; a few believable small actions; sensory detail that accompanies those actions; then a comfortable stopping point. Keep the activity clear enough to follow without concentrating. Do not create suspense or a new problem to solve.\n\nUse ordinary, natural prose. Mix short sentences with medium sentences and a few longer, flowing observations. For this reference family, typical sentence medians are 10\u201319 words and the upper tenth begins around 21\u201333 words. These are guidance, not a formula. Do not make every sentence short or padded. Vary openings so the prose does not become a list beginning 'He' or 'Rowan'.\n\nKeep descriptions relevant to the task. A restrained sensory detail is better than several abstract claims about peace or safety. Repeated motifs may develop, but do not repeat entire phrases. Do not add unusual words to satisfy a diversity score. Do not invent new people, locations or magical effects. Do not narrate the instructions, recap the previous block, or state what a character is forbidden to do.\n\nWrite only the requested block, about 180\u2013230 words. Use three or four natural paragraphs; this block size is our drafting choice, not a rule copied from caption lines. Stop exactly after the assigned action is complete. Return only new story prose, without headings, analysis or commentary.\n",
+  "profile": {
+    "name": "quiet-journey-v1",
+    "status": "experimental; derived from creator guidance and three comparable uploads",
+    "measurement_profile": "transcripts/research/reference-measurements.json",
+    "measurement_scope": "three quiet-story uploads by The Sleepy Shack, not all sleep stories",
+    "viewpoint": "third person",
+    "tense": "present",
+    "protagonist": {
+      "name": "Rowan",
+      "pronouns": "he/him",
+      "role": "adult visiting magical cartographer"
+    },
+    "other_named_characters": [
+      "Elian Vale"
+    ],
+    "format": [
+      {
+        "beat": "orientation",
+        "purpose": "Establish a comfortable place and a simple reason to be there. A separate host welcome is optional."
+      },
+      {
+        "beat": "modest intention",
+        "purpose": "Give the character one benign, concrete thing to do."
+      },
+      {
+        "beat": "gentle activity",
+        "purpose": "Describe small actions in a clear physical sequence, with relevant sensory observations."
+      },
+      {
+        "beat": "local satisfaction",
+        "purpose": "Finish a small task or arrive at a comfortable stopping place; avoid a suspenseful reveal."
+      },
+      {
+        "beat": "settled handoff",
+        "purpose": "Continue softly into the next activity, or reduce novelty near the episode ending."
+      }
+    ],
+    "numeric_guidance": {
+      "sentence_words_median": [
+        10,
+        19
+      ],
+      "sentence_words_p90": [
+        21,
+        33
+      ],
+      "sentences_over_40_fraction": [
+        0,
+        0.025
+      ],
+      "mattr_100": [
+        0.76,
+        0.82
+      ],
+      "sentence_opening_top_bigram_fraction": [
+        0.02,
+        0.07
+      ],
+      "repeated_8gram_token_fraction": [
+        0,
+        0.01
+      ]
+    },
+    "rules": [
+      "Use distributions as guidance; do not stretch or shorten every sentence to match a number.",
+      "Keep viewpoint and physical object states consistent.",
+      "Do not add rare adjectives or new characters merely to raise vocabulary diversity.",
+      "No copied reference prose is supplied to the writing model.",
+      "Paragraph size is an engineering choice, not a measured caption property.",
+      "Semantic coherence and user preference remain separate review requirements."
+    ],
+    "runtime_policy": {
+      "minimum_video_seconds": 10800,
+      "narration_word_budget": "not revised yet; decide continuous narration versus narration plus ambience before full drafting",
+      "do_not_infer_unique_story_duration_from_upload_duration": true
+    }
+  },
+  "facts": [
+    "Rowan is an adult male visiting cartographer. Narration follows him in third person, present tense.",
+    "Rowan and Elian Vale are both in the small map room at Hogwarts, above the Black Lake.",
+    "It is a rainy autumn evening. The rain is outside the closed window; the room is dry.",
+    "A green-shaded brass lamp and Rowan's cup of apple tea are already on the oak worktable.",
+    "Rowan's blue coat is drying on its entrance-hall hook, not in this room.",
+    "The brass cabinet key is in Rowan's hand at the start. The atlas cabinet is shut.",
+    "The faded-blue atlas remains closed on its shelf throughout this sample.",
+    "The brush, small silver ink bottle, scrap of paper and little brush dish may be handled normally.",
+    "No new magic is demonstrated; this is a practical introduction to the tools. Both people stay in the room."
+  ],
+  "blocks": [
+    {
+      "id": 1,
+      "action": "Rowan uses the brass key to open the cabinet. Elian steadies the door. Rowan leaves the atlas on its shelf and places the key on the worktable.",
+      "end_state": "Cabinet door open, atlas still closed on its shelf, key on the table. Both people are standing by the worktable."
+    },
+    {
+      "id": 2,
+      "action": "Elian arranges the small silver ink bottle, brush and paper scrap on the worktable. Rowan moves his tea cup a little aside to make working space. Elian adjusts the lamp toward the paper.",
+      "end_state": "Tools arranged beside the lamp. Cup safely to one side. Atlas remains on its shelf. Neither person has used the brush yet."
+    },
+    {
+      "id": 3,
+      "action": "Elian gives one short practical instruction about using only the brush tip. Rowan dips it lightly and draws one silver line on the scrap. Elian acknowledges the result. Rowan rests the brush in its dish.",
+      "end_state": "One plain silver practice line on the scrap, brush resting in dish, ink bottle on table. The cabinet is open but the atlas is still closed on its shelf. End here."
+    }
+  ],
+  "options": {
+    "seed": 73,
+    "temperature": 0.6,
+    "top_p": 0.9,
+    "top_k": 40,
+    "repeat_penalty": 1.0,
+    "num_ctx": 8192,
+    "num_predict": 550,
+    "num_thread": 4,
+    "num_gpu": 0,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "min_p": 0.0
+  },
+  "model": {
+    "tag": "qwen3.5:4b",
+    "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "details": {
+      "parent_model": "model.gguf",
+      "format": "gguf",
+      "family": "qwen35",
+      "families": [
+        "qwen35"
+      ],
+      "parameter_size": "4.2B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 262144,
+      "embedding_length": 2560,
+      "runner": "llamacpp"
+    },
+    "runtime": {
+      "version": "0.40.16"
+    }
+  },
+  "workflow": "measured-format-trial-v1",
+  "copyright_boundary": "Only aggregate reference measurements and our original plot supplied; no reference story prose."
+}

@@ -1,0 +1,6 @@
+{
+  "display_name": "Wizard voice",
+  "source_profile": "voice/profiles/v6-source.json",
+  "source_variant": "v2-low-rounded",
+  "note": "User-labelled V2 VoiceDesign narrator. Alias only: no new weights or voice-direction changes. Raw synthesis does not apply V6 audition cleanup."
+}

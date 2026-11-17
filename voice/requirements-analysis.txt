@@ -1,0 +1,4 @@
+-r ../requirements.txt
+-r ../requirements-voice-analysis.txt
+onnxruntime>=1.20.1
+soundfile>=0.14.0

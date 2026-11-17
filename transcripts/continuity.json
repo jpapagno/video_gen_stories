@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "accepted_scene_ids": [],
+  "current_location": "outside the entrance hall",
+  "time": "rainy autumn evening",
+  "facts": [
+    "Rowan (he/him) is an adult magical cartographer visiting Hogwarts. Narration is third person, present tense.",
+    "Elian Vale is the elderly male custodian of the seasonal maps.",
+    "The blue wool coat is damp at arrival.",
+    "The brass key is not given until the welcome chapter.",
+    "The visitor has not yet seen the map room or opened an atlas."
+  ],
+  "scene_summaries": {},
+  "last_accepted_ending": "",
+  "note": "Update only after accepting a scene. Local LLM summaries are proposals, not authoritative continuity facts.",
+  "viewpoint": "third",
+  "protagonist": "Rowan"
+}

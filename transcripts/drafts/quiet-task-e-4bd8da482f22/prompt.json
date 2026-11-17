@@ -1,0 +1,123 @@
+{
+  "workflow": "measured-state-trial-v2",
+  "system": "Write original bedtime fiction in third person, present tense, following Rowan. Elian Vale is the only other person. Use plain, natural language and ordinary physical actions.\n\nProtected facts in EVERY block: Rowan is an adult male visiting cartographer, using he/him. Elian is the elderly male custodian, using he/him. Neither is a student. Both remain beside the worktable in a dry map room. The atlas cabinet has a wooden door. The bottle contains silver-colored ink, not oil. The green-shaded lamp is silent and stays on the worktable. Rowan's damp coat is in the entrance hall, never in this room. Treat these as facts to preserve silently, not sentences to copy into the prose.\n\nWrite only the current action block as ONE paragraph of about 90\u2013120 words, with five to eight sentences. Mix short sentences with medium ones; occasional flowing clauses are welcome. Let a useful sensory observation accompany an action. Do not turn every object into a symbol or claim that the room is becoming peaceful.\n\nThe state record tells you what is already true. Do not retell how it happened or list the record as prose. Perform only the current actions, using the listed objects. End at the expected state. Do not invent an extra action, person, location, magical effect, or future encounter to reach a word count. Do not open, lift, move, or discuss the atlas: it remains closed on its shelf outside this block's activity.\n\nVary sentence openings naturally. Avoid stock phrases about holding breath, waiting for nothing, time slowing, feeling safe, a world outside, or warmth filling a chest. Do not add a stock last sentence to explain the mood. Return only the paragraph, without headings, reasoning, or notes.\n\nWeather belongs only in block 1, briefly. In blocks 2\u20136 focus on the current task and objects; do not mention rain, windows, weather, the room's atmosphere, or an earlier action again. Do not begin any paragraph with 'Rain'. Do not describe negative rules such as 'no spells flare' or 'the atlas is not opened'. Do not introduce a tomorrow or declare the evening's work finished: this is only a practice task, and the larger evening continues.\n",
+  "blocks": [
+    {
+      "id": 1,
+      "state": "Rowan and Elian stand in the Hogwarts map room. Rowan holds the brass cabinet key. The cabinet is shut. On the worktable are a green-shaded lamp and Rowan's cup of apple tea.",
+      "actions": "Rowan turns the key and opens the cabinet. Elian steadies the door. Rowan removes the key and places it on the table.",
+      "end": "Cabinet open; key on table; both people remain standing in the room.",
+      "objects": [
+        "key",
+        "cabinet",
+        "worktable",
+        "lamp",
+        "tea cup"
+      ]
+    },
+    {
+      "id": 2,
+      "state": "The cabinet is already open and the key is on the table. A small tray of tools is on an inner shelf.",
+      "actions": "Elian lifts out the tray and puts it on the worktable. It holds a closed silver ink bottle, soft brush, small brush dish, and scrap of paper.",
+      "end": "Tray and unused tools on the worktable; bottle closed; Rowan watches.",
+      "objects": [
+        "cabinet",
+        "tray",
+        "ink bottle",
+        "brush",
+        "dish",
+        "paper scrap",
+        "worktable"
+      ]
+    },
+    {
+      "id": 3,
+      "state": "The tray of unused tools is on the table beside the green-shaded lamp. Rowan's tea cup is near the working space.",
+      "actions": "Rowan moves his tea cup to one side and lays the paper scrap flat. Elian angles the lamp toward the paper.",
+      "end": "Working space clear, paper flat and well lit; tools not yet used.",
+      "objects": [
+        "tea cup",
+        "paper scrap",
+        "lamp",
+        "table",
+        "tray"
+      ]
+    },
+    {
+      "id": 4,
+      "state": "The paper is flat beneath the lamp. The brush lies unused on the tray and the ink bottle is closed.",
+      "actions": "Elian opens the ink bottle and sets its stopper on the tray. He tells Rowan, 'Only the tip.' Rowan picks up the brush but has not dipped it yet.",
+      "end": "Ink bottle open, stopper on tray, Rowan holding the dry brush.",
+      "objects": [
+        "ink bottle",
+        "stopper",
+        "tray",
+        "brush",
+        "paper",
+        "lamp"
+      ]
+    },
+    {
+      "id": 5,
+      "state": "Rowan holds the dry brush above the open silver ink bottle. The paper scrap is waiting beneath the lamp.",
+      "actions": "Rowan touches the brush tip to the ink, then draws one thin silver line on the scrap. Elian observes and says, 'That's enough.' The line is ordinary ink, with no magical effect.",
+      "end": "One plain silver line on paper; Rowan still holds the brush; bottle open.",
+      "objects": [
+        "brush",
+        "ink",
+        "bottle",
+        "paper",
+        "lamp"
+      ]
+    },
+    {
+      "id": 6,
+      "state": "The silver practice line is complete. Rowan holds the brush. The bottle stopper and small brush dish are on the tray.",
+      "actions": "Rowan rests the brush in its dish and replaces the stopper. Elian gives the finished line a small acknowledging nod. End with the completed practice task; introduce no next activity.",
+      "end": "Brush in dish, bottle secured, practice line on paper. Both people still in the map room.",
+      "objects": [
+        "brush",
+        "dish",
+        "tray",
+        "bottle",
+        "stopper",
+        "paper"
+      ]
+    }
+  ],
+  "options": {
+    "seed": 73,
+    "temperature": 0.6,
+    "top_p": 0.9,
+    "top_k": 40,
+    "repeat_penalty": 1.05,
+    "num_ctx": 8192,
+    "num_predict": 300,
+    "num_thread": 4,
+    "num_gpu": 0,
+    "presence_penalty": 0.2,
+    "frequency_penalty": 0.0,
+    "min_p": 0.0
+  },
+  "model": {
+    "tag": "qwen3.5:4b",
+    "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "details": {
+      "parent_model": "model.gguf",
+      "format": "gguf",
+      "family": "qwen35",
+      "families": [
+        "qwen35"
+      ],
+      "parameter_size": "4.2B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 262144,
+      "embedding_length": 2560,
+      "runner": "llamacpp"
+    },
+    "runtime": {
+      "version": "0.40.16"
+    }
+  },
+  "note": "Same model and original scene as D; tests a bundled workflow change, not an isolated causal experiment. No reference prose or prior generated prose is provided."
+}

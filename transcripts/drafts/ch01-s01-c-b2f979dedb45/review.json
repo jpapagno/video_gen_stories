@@ -1,0 +1,50 @@
+{
+  "scores": {
+    "read_aloud": 3,
+    "specificity": 3,
+    "gentle_movement": 2,
+    "continuity": 2,
+    "sleep_tone": 3,
+    "freshness": 2
+  },
+  "issues": [
+    {
+      "criterion": "continuity",
+      "evidence": "You stand just inside the stone arch, the rain still tracing your shoulders...",
+      "problem": "Block 3 begins with the narrator standing inside the hall (per previous block), but this excerpt returns to the archway outside. This breaks the linear progression of the planned blocks.",
+      "suggestion": "Move the description of the archway and the coat's weight to the very beginning of the text, before entering the hall, to maintain the flow from outside to inside."
+    },
+    {
+      "criterion": "read_aloud",
+      "evidence": "The door swings open, revealing the dry entrance hall beyond. You step inside...",
+      "problem": "The phrase 'dry entrance hall' is slightly jarring given the previous sentence mentions 'warm stone air' and 'clean, dry stone floor' immediately after. It feels like a redundant descriptor rather than a new discovery.",
+      "suggestion": "Remove 'dry' from 'dry entrance hall' or rephrase to 'revealing the warm, dry entrance hall' to avoid repetitive adjectives in rapid succession."
+    },
+    {
+      "criterion": "gentle_movement",
+      "evidence": "You reach for the brass pull on the door. Your fingers wrap around its cool metal surface.",
+      "problem": "The action of 'reaching' and 'wrapping' is functional but lacks the slow, deliberate pacing required for a bedtime story. It feels slightly rushed compared to the surrounding text.",
+      "suggestion": "Slow the action down: 'You extend your hand toward the brass pull... Your fingers slowly wrap around its cool metal surface.'"
+    },
+    {
+      "criterion": "freshness",
+      "evidence": "The air smells faintly of old dust and dried leaves... The smell of old dust and dried leaves fills the air...",
+      "problem": "The scent description is repeated almost verbatim in Block 2 and Block 3. This reduces the freshness of the sensory experience.",
+      "suggestion": "Vary the description in the second instance. Instead of 'old dust and dried leaves,' try 'the scent of old parchment and dried leaves' to match the candle detail found later, or simply 'the scent of the old hall.'"
+    }
+  ],
+  "continuity_proposals": [
+    {
+      "fact": "The towel is described as 'white' in the final paragraph, whereas Block 3 only established it as 'clean folded towel' without specifying color."
+    }
+  ],
+  "summary": "The draft successfully establishes the mood and adheres to most constraints, but it disrupts the planned linear progression by returning to the exterior archway in the final paragraph. Repetitive sensory details (smell of dust/leaves) reduce freshness. The movement into the hall is functional but could be slowed for better sleep tone. Minor continuity gaps exist regarding the narrator's location and the towel's color.",
+  "recommendation": "revise",
+  "unverified_evidence": [
+    "You stand just inside the stone arch, the rain still tracing your shoulders...",
+    "The door swings open, revealing the dry entrance hall beyond. You step inside...",
+    "The air smells faintly of old dust and dried leaves... The smell of old dust and dried leaves fills the air..."
+  ],
+  "status": "local_editorial_estimate_needs_human_review",
+  "done_reason": "stop"
+}

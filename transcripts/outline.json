@@ -1,0 +1,668 @@
+{
+  "title": "The Room Where Maps Sleep",
+  "version": 1,
+  "target_words_per_scene": 750,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The light beyond the rain",
+      "purpose": "Arrival and shelter",
+      "scenes": [
+        {
+          "id": "ch01-s01",
+          "title": "Under the arch",
+          "chapter_id": "ch01",
+          "sequence": 1,
+          "starting_situation": "outside the entrance",
+          "required_ending": "inside the entrance hall",
+          "required_beats": [
+            "Approach beneath the stone arch and notice the rain change under shelter",
+            "Open the already-unlatched inner door",
+            "Pause inside and discover the folded towel beside the umbrella stand"
+          ],
+          "emotional_movement": "unfamiliar to sheltered",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        },
+        {
+          "id": "ch01-s02",
+          "title": "A place for the coat",
+          "chapter_id": "ch01",
+          "sequence": 2,
+          "starting_situation": "inside the entrance hall",
+          "required_ending": "coat drying on its brass hook",
+          "required_beats": [
+            "Dry hands with the provided towel",
+            "Hang the blue wool coat on a brass hook",
+            "Watch a modest household charm lift moisture from the wool"
+          ],
+          "emotional_movement": "unfamiliar to sheltered",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        },
+        {
+          "id": "ch01-s03",
+          "title": "The keeper of maps",
+          "chapter_id": "ch01",
+          "sequence": 3,
+          "starting_situation": "beside the coat hook",
+          "required_ending": "following Elian toward the tea room",
+          "required_beats": [
+            "Meet Elian Vale carrying a green-shaded lamp",
+            "Exchange a brief practical welcome",
+            "Follow him toward the room where tea is waiting"
+          ],
+          "emotional_movement": "unfamiliar to sheltered",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        }
+      ]
+    },
+    {
+      "id": "ch02",
+      "title": "Tea before the work",
+      "purpose": "An invitation without urgency",
+      "scenes": [
+        {
+          "id": "ch02-s01",
+          "title": "Two cups",
+          "chapter_id": "ch02",
+          "sequence": 4,
+          "starting_situation": "tea-room doorway",
+          "required_ending": "seated at the tea table",
+          "required_beats": [
+            "Choose a comfortable chair",
+            "Elian pours apple-scented tea",
+            "Settle the cup and wet notebook on the table"
+          ],
+          "emotional_movement": "patient attention to small completion",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        },
+        {
+          "id": "ch02-s02",
+          "title": "The small collection",
+          "chapter_id": "ch02",
+          "sequence": 5,
+          "starting_situation": "seated at the tea table",
+          "required_ending": "understanding the evening invitation",
+          "required_beats": [
+            "Explain your visiting-cartographer role through brief dialogue",
+            "Elian describes the seasonal-map collection",
+            "He offers a small brass key for its cabinet"
+          ],
+          "emotional_movement": "patient attention to small completion",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        },
+        {
+          "id": "ch02-s03",
+          "title": "A lamp to follow",
+          "chapter_id": "ch02",
+          "sequence": 6,
+          "starting_situation": "finishing tea",
+          "required_ending": "at the map-room door",
+          "required_beats": [
+            "Finish a little tea and carry the cup on its saucer",
+            "Follow Elian and the green lamp upstairs",
+            "Reach the map-room door above the Black Lake"
+          ],
+          "emotional_movement": "patient attention to small completion",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        }
+      ]
+    },
+    {
+      "id": "ch03",
+      "title": "The room above the lake",
+      "purpose": "Learn the tools and room",
+      "scenes": [
+        {
+          "id": "ch03-s01",
+          "title": "Shelves and water",
+          "chapter_id": "ch03",
+          "sequence": 7,
+          "starting_situation": "at the map-room door",
+          "required_ending": "beside the oak worktable",
+          "required_beats": [
+            "Enter the small archive",
+            "Find the lake through the narrow rain-streaked window",
+            "Set cup and lamp on the oak table"
+          ],
+          "emotional_movement": "patient attention to small completion",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        },
+        {
+          "id": "ch03-s02",
+          "title": "Ink at the margin",
+          "chapter_id": "ch03",
+          "sequence": 8,
+          "starting_situation": "beside the oak worktable",
+          "required_ending": "able to make a small silver mark",
+          "required_beats": [
+            "Use the brass key to open the atlas cabinet",
+            "Elian lays out silver ink and a soft brush",
+            "Practice a tiny mark on a scrap of parchment"
+          ],
+          "emotional_movement": "patient attention to small completion",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        },
+        {
+          "id": "ch03-s03",
+          "title": "The first page",
+          "chapter_id": "ch03",
+          "sequence": 9,
+          "starting_situation": "tools arranged on the table",
+          "required_ending": "alone with the open orchard map",
+          "required_beats": [
+            "Open the faded-blue atlas to an orchard",
+            "Elian explains familiar night-time adjustments",
+            "He wishes you a comfortable evening and departs along the corridor"
+          ],
+          "emotional_movement": "patient attention to small completion",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        }
+      ]
+    },
+    {
+      "id": "ch04",
+      "title": "Silver along the paths",
+      "purpose": "Care for the orchard map",
+      "scenes": [
+        {
+          "id": "ch04-s01",
+          "title": "The orchard gate",
+          "chapter_id": "ch04",
+          "sequence": 10,
+          "starting_situation": "alone with the open orchard map",
+          "required_ending": "the painted gate gently closed",
+          "required_beats": [
+            "Study the orchard paths and cottage from the tabletop",
+            "Brush a silver trace along the nearest path",
+            "Let the small gate rest against its post"
+          ],
+          "emotional_movement": "patient attention to small completion",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        },
+        {
+          "id": "ch04-s02",
+          "title": "Dew on the branches",
+          "chapter_id": "ch04",
+          "sequence": 11,
+          "starting_situation": "the painted gate gently closed",
+          "required_ending": "the orchard paths marked for night",
+          "required_beats": [
+            "Prepare a very small fresh amount of ink",
+            "Work patiently along three branching paths",
+            "Pause to inspect a tiny silver dew mark without adding more"
+          ],
+          "emotional_movement": "patient attention to small completion",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        },
+        {
+          "id": "ch04-s03",
+          "title": "One cottage window",
+          "chapter_id": "ch04",
+          "sequence": 12,
+          "starting_situation": "the orchard paths marked for night",
+          "required_ending": "the orchard complete and brush resting",
+          "required_beats": [
+            "Light the cottage window with one brush touch",
+            "Observe leaves and painted shadows become still",
+            "Set the brush in its dish and leave this page complete"
+          ],
+          "emotional_movement": "patient attention to small completion",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        }
+      ]
+    },
+    {
+      "id": "ch05",
+      "title": "The winter village",
+      "purpose": "Settle a new quiet landscape",
+      "scenes": [
+        {
+          "id": "ch05-s01",
+          "title": "A page of snow",
+          "chapter_id": "ch05",
+          "sequence": 13,
+          "starting_situation": "orchard page complete",
+          "required_ending": "winter-village page open",
+          "required_beats": [
+            "Turn the atlas page carefully after the ink dries",
+            "Discover a painted winter village within the map, while real weather remains autumn rain",
+            "Identify its footbridge, well and few unlit windows"
+          ],
+          "emotional_movement": "patient attention to small completion",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        },
+        {
+          "id": "ch05-s02",
+          "title": "Windows by the well",
+          "chapter_id": "ch05",
+          "sequence": 14,
+          "starting_situation": "winter-village page open",
+          "required_ending": "a small row of windows lit",
+          "required_beats": [
+            "Restore a path beside the well",
+            "Light the village windows one at a time",
+            "Let each mark dry before beginning the next"
+          ],
+          "emotional_movement": "patient attention to small completion",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        },
+        {
+          "id": "ch05-s03",
+          "title": "The covered bridge",
+          "chapter_id": "ch05",
+          "sequence": 15,
+          "starting_situation": "a small row of windows lit",
+          "required_ending": "winter page resting complete",
+          "required_beats": [
+            "Trace the sheltered bridge rail",
+            "Brush snow from a painted doorstep through a tiny ink adjustment",
+            "Finish the page and set the brush down"
+          ],
+          "emotional_movement": "patient attention to small completion",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        }
+      ]
+    },
+    {
+      "id": "ch06",
+      "title": "A seat over the water",
+      "purpose": "A restful interval",
+      "scenes": [
+        {
+          "id": "ch06-s01",
+          "title": "The cup and the cloth",
+          "chapter_id": "ch06",
+          "sequence": 16,
+          "starting_situation": "winter page complete",
+          "required_ending": "worktable safely paused",
+          "required_beats": [
+            "Cover the silver ink bottle",
+            "Wipe the brush and leave it supported",
+            "Carry the tea to the window seat"
+          ],
+          "emotional_movement": "patient attention to small completion",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        },
+        {
+          "id": "ch06-s02",
+          "title": "Rain on the glass",
+          "chapter_id": "ch06",
+          "sequence": 17,
+          "starting_situation": "at the window seat",
+          "required_ending": "comfortable beside the window",
+          "required_beats": [
+            "Find a folded blanket at the seat",
+            "Observe the real Black Lake and quiet shore",
+            "Let ordinary sounds accompany a few calm observations"
+          ],
+          "emotional_movement": "patient attention to small completion",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        },
+        {
+          "id": "ch06-s03",
+          "title": "Back to the lamp",
+          "chapter_id": "ch06",
+          "sequence": 18,
+          "starting_situation": "comfortable beside the window",
+          "required_ending": "back at the worktable",
+          "required_beats": [
+            "Finish the tea and leave cup on its saucer",
+            "Fold the borrowed blanket",
+            "Return to the lamp and open the next atlas page"
+          ],
+          "emotional_movement": "patient attention to small completion",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        }
+      ]
+    },
+    {
+      "id": "ch07",
+      "title": "The greenhouse after dusk",
+      "purpose": "Tend small leaves and paths",
+      "scenes": [
+        {
+          "id": "ch07-s01",
+          "title": "Glass beneath the ink",
+          "chapter_id": "ch07",
+          "sequence": 19,
+          "starting_situation": "at the worktable",
+          "required_ending": "greenhouse map understood",
+          "required_beats": [
+            "Observe the painted greenhouse and its beds",
+            "Choose the path that needs a little silver definition",
+            "Prepare a modest amount of ink"
+          ],
+          "emotional_movement": "patient attention to small completion",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        },
+        {
+          "id": "ch07-s02",
+          "title": "Leaves folding",
+          "chapter_id": "ch07",
+          "sequence": 20,
+          "starting_situation": "greenhouse map understood",
+          "required_ending": "painted leaves resting for night",
+          "required_beats": [
+            "Trace the bed edges without touching the plants",
+            "Watch the enchanted leaves fold naturally",
+            "Adjust a small watering-channel mark"
+          ],
+          "emotional_movement": "patient attention to small completion",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        },
+        {
+          "id": "ch07-s03",
+          "title": "A clean pane",
+          "chapter_id": "ch07",
+          "sequence": 21,
+          "starting_situation": "painted leaves resting for night",
+          "required_ending": "greenhouse page complete",
+          "required_beats": [
+            "Clear one painted pane with a careful brush stroke",
+            "Settle the greenhouse latch",
+            "Leave the scene complete and rinse the brush"
+          ],
+          "emotional_movement": "patient attention to small completion",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        }
+      ]
+    },
+    {
+      "id": "ch08",
+      "title": "The river keeps its stars",
+      "purpose": "Finish the last landscape",
+      "scenes": [
+        {
+          "id": "ch08-s01",
+          "title": "Bend in the river",
+          "chapter_id": "ch08",
+          "sequence": 22,
+          "starting_situation": "greenhouse page complete",
+          "required_ending": "river map open",
+          "required_beats": [
+            "Turn to a slow painted river",
+            "Locate the footbridge and mooring post",
+            "Notice where the reflected stars have faded"
+          ],
+          "emotional_movement": "patient attention to small completion",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        },
+        {
+          "id": "ch08-s02",
+          "title": "Reflections returned",
+          "chapter_id": "ch08",
+          "sequence": 23,
+          "starting_situation": "river map open",
+          "required_ending": "a few steady stars restored",
+          "required_beats": [
+            "Add silver dots carefully between the painted ripples",
+            "Connect a faint path to the footbridge",
+            "Inspect the reflections without filling every dark space"
+          ],
+          "emotional_movement": "patient attention to small completion",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        },
+        {
+          "id": "ch08-s03",
+          "title": "The boat at its post",
+          "chapter_id": "ch08",
+          "sequence": 24,
+          "starting_situation": "a few steady stars restored",
+          "required_ending": "river landscape resting complete",
+          "required_beats": [
+            "Define the little mooring line",
+            "Observe the boat settle beside its post",
+            "Leave the last landscape still and close the ink bottle"
+          ],
+          "emotional_movement": "patient attention to small completion",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        }
+      ]
+    },
+    {
+      "id": "ch09",
+      "title": "Atlases at rest",
+      "purpose": "Close the evening work",
+      "scenes": [
+        {
+          "id": "ch09-s01",
+          "title": "Brush and bottle",
+          "chapter_id": "ch09",
+          "sequence": 25,
+          "starting_situation": "river page complete",
+          "required_ending": "tools cleaned and put aside",
+          "required_beats": [
+            "Rinse the soft brush and dry its handle",
+            "Secure the silver ink bottle",
+            "Fold the work cloth around the tools"
+          ],
+          "emotional_movement": "patient attention to small completion",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        },
+        {
+          "id": "ch09-s02",
+          "title": "The blue binding",
+          "chapter_id": "ch09",
+          "sequence": 26,
+          "starting_situation": "tools cleaned and put aside",
+          "required_ending": "atlas closed and shelved",
+          "required_beats": [
+            "Check that the painted page is dry",
+            "Close the faded-blue atlas without a dramatic final discovery",
+            "Return it to its place in the cabinet"
+          ],
+          "emotional_movement": "patient attention to small completion",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        },
+        {
+          "id": "ch09-s03",
+          "title": "The last shelf",
+          "chapter_id": "ch09",
+          "sequence": 27,
+          "starting_situation": "atlas closed and shelved",
+          "required_ending": "at the map-room door ready to leave",
+          "required_beats": [
+            "Return the other small maps to their shelves",
+            "Lock the cabinet with the brass key",
+            "Take the lamp and empty cup to the door; introduce no new landscape"
+          ],
+          "emotional_movement": "patient attention to small completion",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        }
+      ]
+    },
+    {
+      "id": "ch10",
+      "title": "The portrait corridor",
+      "purpose": "Walk toward the guest room",
+      "scenes": [
+        {
+          "id": "ch10-s01",
+          "title": "A quiet landing",
+          "chapter_id": "ch10",
+          "sequence": 28,
+          "starting_situation": "at the map-room door",
+          "required_ending": "in the portrait corridor",
+          "required_beats": [
+            "Leave the room in its ordinary night-time order",
+            "Carry the lamp, key and empty cup",
+            "Walk onto the still landing"
+          ],
+          "emotional_movement": "patient attention to small completion",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        },
+        {
+          "id": "ch10-s02",
+          "title": "The blue coat again",
+          "chapter_id": "ch10",
+          "sequence": 29,
+          "starting_situation": "in the portrait corridor",
+          "required_ending": "carrying the dry blue coat",
+          "required_beats": [
+            "Follow the familiar corridor back toward the entrance",
+            "Allow one brief understated greeting from an unnamed portrait",
+            "Collect the dried blue wool coat from its brass hook"
+          ],
+          "emotional_movement": "patient attention to small completion",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        },
+        {
+          "id": "ch10-s03",
+          "title": "The guest-room door",
+          "chapter_id": "ch10",
+          "sequence": 30,
+          "starting_situation": "carrying the dry blue coat",
+          "required_ending": "inside the guest room",
+          "required_beats": [
+            "Leave the empty cup on the tea-room tray while passing",
+            "Carry coat, brass key and lamp along the guest passage",
+            "Open the ordinary guest-room door and step inside"
+          ],
+          "emotional_movement": "patient attention to small completion",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        }
+      ]
+    },
+    {
+      "id": "ch11",
+      "title": "A room prepared",
+      "purpose": "Settle into the guest room",
+      "scenes": [
+        {
+          "id": "ch11-s01",
+          "title": "Beside the door",
+          "chapter_id": "ch11",
+          "sequence": 31,
+          "starting_situation": "inside the guest room",
+          "required_ending": "coat and key set down",
+          "required_beats": [
+            "Hang the blue coat beside the door",
+            "Place the brass map-cabinet key on a small dish",
+            "Set the green-shaded lamp on the bedside table"
+          ],
+          "emotional_movement": "comfortable to increasingly still",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        },
+        {
+          "id": "ch11-s02",
+          "title": "Low fire",
+          "chapter_id": "ch11",
+          "sequence": 32,
+          "starting_situation": "coat and key set down",
+          "required_ending": "seated beside the low hearth",
+          "required_beats": [
+            "Notice the prepared bed and low steady fire",
+            "Choose the chair beside the hearth",
+            "Rest with only familiar rain and room sounds"
+          ],
+          "emotional_movement": "comfortable to increasingly still",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        },
+        {
+          "id": "ch11-s03",
+          "title": "The lamp turned low",
+          "chapter_id": "ch11",
+          "sequence": 33,
+          "starting_situation": "seated beside the low hearth",
+          "required_ending": "resting in bed with dim light",
+          "required_beats": [
+            "Leave the chair without a new task",
+            "Settle beneath the bedcovers",
+            "Turn the lamp low and let the room become simpler"
+          ],
+          "emotional_movement": "comfortable to increasingly still",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        }
+      ]
+    },
+    {
+      "id": "ch12",
+      "title": "The castle rests",
+      "purpose": "Reduce detail and leave a settled ending",
+      "scenes": [
+        {
+          "id": "ch12-s01",
+          "title": "The familiar window",
+          "chapter_id": "ch12",
+          "sequence": 34,
+          "starting_situation": "resting in bed with dim light",
+          "required_ending": "comfortable with familiar sounds",
+          "required_beats": [
+            "Notice the already-familiar window and rain",
+            "Let a few simple room details recur without a catalogue",
+            "Keep all work completed and introduce nothing new"
+          ],
+          "emotional_movement": "comfortable to increasingly still",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        },
+        {
+          "id": "ch12-s02",
+          "title": "A smaller circle of light",
+          "chapter_id": "ch12",
+          "sequence": 35,
+          "starting_situation": "comfortable with familiar sounds",
+          "required_ending": "attention resting on fewer details",
+          "required_beats": [
+            "Let the remaining light and low fire become less prominent",
+            "Use fewer fresh images and no dialogue",
+            "Move gently toward a stable final scene"
+          ],
+          "emotional_movement": "comfortable to increasingly still",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        },
+        {
+          "id": "ch12-s03",
+          "title": "Rest beside the page",
+          "chapter_id": "ch12",
+          "sequence": 36,
+          "starting_situation": "attention resting on fewer details",
+          "required_ending": "a settled ending with no awakening",
+          "required_beats": [
+            "Recall the closed atlas briefly without reopening its story",
+            "Return to the present guest room",
+            "End with quiet completion, no morning scene or promise of another adventure"
+          ],
+          "emotional_movement": "comfortable to increasingly still",
+          "target_words": 750,
+          "next_scene_boundary": "Stop at the required ending; do not begin the next outlined activity."
+        }
+      ]
+    }
+  ],
+  "planned_words": 27000
+}

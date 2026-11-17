@@ -1,0 +1,38 @@
+{
+  "name": "quiet-journey-v1",
+  "status": "experimental; derived from creator guidance and three comparable uploads",
+  "measurement_profile": "transcripts/research/reference-measurements.json",
+  "measurement_scope": "three quiet-story uploads by The Sleepy Shack, not all sleep stories",
+  "viewpoint": "third person",
+  "tense": "present",
+  "protagonist": {"name": "Rowan", "pronouns": "he/him", "role": "adult visiting magical cartographer"},
+  "other_named_characters": ["Elian Vale"],
+  "format": [
+    {"beat": "orientation", "purpose": "Establish a comfortable place and a simple reason to be there. A separate host welcome is optional."},
+    {"beat": "modest intention", "purpose": "Give the character one benign, concrete thing to do."},
+    {"beat": "gentle activity", "purpose": "Describe small actions in a clear physical sequence, with relevant sensory observations."},
+    {"beat": "local satisfaction", "purpose": "Finish a small task or arrive at a comfortable stopping place; avoid a suspenseful reveal."},
+    {"beat": "settled handoff", "purpose": "Continue softly into the next activity, or reduce novelty near the episode ending."}
+  ],
+  "numeric_guidance": {
+    "sentence_words_median": [10, 19],
+    "sentence_words_p90": [21, 33],
+    "sentences_over_40_fraction": [0, 0.025],
+    "mattr_100": [0.76, 0.82],
+    "sentence_opening_top_bigram_fraction": [0.02, 0.07],
+    "repeated_8gram_token_fraction": [0, 0.01]
+  },
+  "rules": [
+    "Use distributions as guidance; do not stretch or shorten every sentence to match a number.",
+    "Keep viewpoint and physical object states consistent.",
+    "Do not add rare adjectives or new characters merely to raise vocabulary diversity.",
+    "No copied reference prose is supplied to the writing model.",
+    "Paragraph size is an engineering choice, not a measured caption property.",
+    "Semantic coherence and user preference remain separate review requirements."
+  ],
+  "runtime_policy": {
+    "minimum_video_seconds": 10800,
+    "narration_word_budget": "not revised yet; decide continuous narration versus narration plus ambience before full drafting",
+    "do_not_infer_unique_story_duration_from_upload_duration": true
+  }
+}

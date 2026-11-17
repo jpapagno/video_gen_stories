@@ -1,0 +1,12 @@
+[
+  {
+    "name": "v2-low-rounded",
+    "seed": 42,
+    "instruction": "A mature British male bedtime narrator. Low, rounded, velvety baritone with a gentle Southern English accent. Speak slowly and softly, with almost level intonation and relaxed pauses. Intimate and slightly breathy, with smooth gentle consonants. No gravel, rasp, theatrical projection or sharp sibilance. Warm, understated late-night storytelling, not whispering."
+  },
+  {
+    "name": "v3-soft-intimate",
+    "seed": 64,
+    "instruction": "An adult British male narrator with a soft, dark baritone and a natural understated English accent. Gentle, slightly airy close-microphone narration. Relaxed breath support, tender articulation, low and nearly level pitch. Speak slowly with comfortable pauses and quiet sentence endings. No rasp or dramatic emphasis. Calm bedtime audiobook delivery, not whispering."
+  }
+]

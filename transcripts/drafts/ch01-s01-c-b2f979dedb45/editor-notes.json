@@ -1,0 +1,23 @@
+{
+  "author": "Codex editorial inspection",
+  "user_approved": false,
+  "keep": [
+    "Second-person present-tense adult visitor",
+    "Blue coat stays worn and damp",
+    "Three-stage progression: arch, door, entrance-hall towel discovery",
+    "No dialogue or other person; stop before touching the towel"
+  ],
+  "required_fixes": [
+    "Remove the heavy, frantic rain and howling wind. Weather is fine autumn rain, not a storm or an adversary.",
+    "Fix the spatial reset in the last third. Once the visitor enters and the door closes, remain inside. Rain no longer falls on the visitor. The damp coat remains damp naturally.",
+    "Use ordinary Hogwarts floating candles with small visible flames, held well above head height. Remove flameless candles, humming, movement toward the face, and synchronization with breathing.",
+    "The object beside the stool is an umbrella STAND. Do not introduce or carry a personal umbrella. There is no need to describe an umbrella at all.",
+    "The clean folded towel remains untouched. Do not claim to feel its softness or temperature before touching it.",
+    "Remove negative-instruction leakage: sentences saying you do not dry, remove, hang, lift, or fold things are not story actions. Preserve the facts silently.",
+    "Remove repetitive abstractions: the world/hall holding its breath, waiting for nothing, feeling safe, calm filling the chest, rhythm settling into bones. Use concrete observations instead.",
+    "Remove the impossible hypothetical claim of feeling wood if you were to touch it. Show only actual contact. The unlatched door opens using its brass pull; no unlocking occurs.",
+    "Reduce repetition between block endings and beginnings. Write this as one continuous scene rather than three restarts.",
+    "Allow a natural mix of short and medium sentences. Avoid long run-ons and avoid starting nearly every sentence with You.",
+    "Retain 600\u2013900 words through a few clear physical actions and relevant observations. End with noticing the folded towel, without touching it, drying hands, hanging the coat, or meeting anyone."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "scores": {
+    "read_aloud": 3,
+    "specificity": 4,
+    "gentle_movement": 2,
+    "continuity": 1,
+    "sleep_tone": 3,
+    "freshness": 0
+  },
+  "issues": [
+    {
+      "criterion": "continuity",
+      "evidence": "You lift the heavy garment free from your shoulders... before laying both layers flat over the towel's surface so that every inch of fabric dries evenly without running cold water directly onto anything else in the hall.",
+      "problem": "The scene ends with hanging/drying clothes, but Locked Facts state 'Key/coat are not already in the guest room' and Continuity says 'Dry hands and hang the coat; do not perform those actions yet.'",
+      "suggestion": "Remove the folding/hanging action entirely. End at the moment Elian gestures toward the hook or just before you place your hand on it."
+    },
+    {
+      "criterion": "freshness",
+      "evidence": "The movement feels simple and natural, requiring no magic... He knows exactly how long it takes for water to drain out properly without dripping back onto the floor.",
+      "problem": "Over-explanation of mundane tasks violates 'Show safety once' and creates unnecessary repetition/description rather than narrative flow.",
+      "suggestion": "Cut paragraphs 9-10. Let Elian's nod or a simple gesture imply competence; describe the result (dry hands) instead of the mechanics."
+    },
+    {
+      "criterion": "read_aloud",
+      "evidence": "The metal hinges are smooth and oiled, silent under his touch as he nudges them open with a small, careful push that requires no strength but only patience.",
+      "problem": "Slightly clunky phrasing ('requires no strength but only patience') disrupts the gentle rhythm needed for sleep tone.",
+      "suggestion": "Shorten to: 'He nudged them open. The hinges were smooth and oiled, silent under his touch.'"
+    },
+    {
+      "criterion": "continuity",
+      "evidence": "You reach the doorway and pause for just a moment before stepping through into the cool stillness of the main hall beyond... Elian gestures with his chin toward a brass hook mounted on the wall near the entrance.",
+      "problem": "The scene ends inside the Main Hall, but Locked Facts require geography 'entrance hall \u2192 small tea room'. The handoff implies staying in Entrance Hall to hang coat, which contradicts both facts and creates continuity confusion about location.",
+      "suggestion": "Ensure you end exactly at the boundary of the Entrance Hall before hanging the coat if that is allowed, or remove the hanging action entirely so the scene ends with Elian gesturing toward the tea room."
+    }
+  ],
+  "continuity_proposals": [],
+  "summary": "The draft exceeds word count and fails continuity checks by performing actions (hanging/drying) forbidden in Locked Facts. It over-explains mundane tasks rather than showing them, disrupting sleep tone. The location drifts into Main Hall when it should end at the Entrance Hall boundary.",
+  "recommendation": "revise",
+  "unverified_evidence": [
+    "You lift the heavy garment free from your shoulders... before laying both layers flat over the towel's surface so that every inch of fabric dries evenly without running cold water directly onto anything else in the hall.",
+    "The movement feels simple and natural, requiring no magic... He knows exactly how long it takes for water to drain out properly without dripping back onto the floor.",
+    "You reach the doorway and pause for just a moment before stepping through into the cool stillness of the main hall beyond... Elian gestures with his chin toward a brass hook mounted on the wall near the entrance."
+  ],
+  "status": "local_editorial_estimate_needs_human_review",
+  "done_reason": "stop"
+}
