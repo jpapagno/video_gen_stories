@@ -42,4 +42,4 @@ npm ci
 npm run build
 ```
 
-Review the narration and final video yourself before publishing. Independent VoiceDesign chunks can change voice identity; a natural-language profile is not a trained custom voice model. Actual runtime comes from the rendered WAV, not a word-count estimate. No uploader, music mixer or caption generator is included.
+Review the narration and final video yourself before publishing. Narration now reuses a pinned Wizard V2 speaker reference with Qwen's Base cloning model; expression can still vary, so a preview remains important. Actual runtime comes from the rendered WAV, not a word-count estimate. No uploader, music mixer or caption generator is included.

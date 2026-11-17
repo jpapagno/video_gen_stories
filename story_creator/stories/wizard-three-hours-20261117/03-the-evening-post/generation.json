@@ -1,0 +1,19 @@
+{
+  "slug": "03-the-evening-post",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "requested_ui_equivalent": "Light",
+  "exit_code": 0,
+  "elapsed_seconds": 287.61,
+  "status": "complete",
+  "credit_charge": "Not exposed by runner",
+  "usage": {
+    "input_tokens": 15345,
+    "cached_input_tokens": 12288,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 5980,
+    "reasoning_output_tokens": 344
+  },
+  "title": "The Evening Post",
+  "words": 4366
+}

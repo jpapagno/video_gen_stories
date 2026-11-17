@@ -61,12 +61,15 @@ def fetch(path):
     print(f"Saved {path} ({total} bytes)", flush=True)
 
 
-def install(kind="design"):
+def install(kind="base"):
     global ROOT, REPO
     if kind == "base":
         ROOT = Path(__file__).resolve().parents[1] / "media/qwen/Base"
         REPO = "Qwen/Qwen3-TTS-12Hz-1.7B-Base"
-    elif kind != "design":
+    elif kind == "design":
+        ROOT = Path(__file__).resolve().parents[1] / "media/qwen/VoiceDesign"
+        REPO = "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign"
+    else:
         raise ValueError("Unknown model kind")
     with urllib.request.urlopen(f"https://huggingface.co/api/models/{REPO}?blobs=true", timeout=60) as response:
         metadata = json.load(response)
@@ -88,4 +91,7 @@ def install(kind="design"):
 
 
 if __name__ == "__main__":
-    install()
+    import argparse
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--kind", choices=["base", "design"], default="base")
+    install(parser.parse_args().kind)

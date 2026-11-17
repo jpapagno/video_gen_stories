@@ -30,13 +30,13 @@ py -3.13 -m venv .venv-qwen
 
 These are the project's saved CUDA 13.0 package versions. If wheels or your driver are incompatible, consult the [official PyTorch installer](https://pytorch.org/get-started/locally/) before choosing a different build. `CUDA available: False` means the full narration runner cannot run in that environment; check the interpreter and GPU driver before rendering.
 
-Download the official [Qwen3-TTS VoiceDesign model](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign):
+Download the official [Qwen3-TTS 1.7B Base cloning model](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base):
 
 ```powershell
 .venv\Scripts\python -m voice download
 ```
 
-This uses the standard library, saves to `media/qwen/VoiceDesign`, resumes partial tensor downloads and checks published LFS SHA256 hashes. It downloads the model repository's current `main` and records metadata in `download-manifest.json`; it is not pinned to an immutable revision. Keep that manifest if you need to track your exact download. Inference uses local files and does not automatically fetch missing assets.
+This uses the standard library, saves to `media/qwen/Base`, resumes partial tensor downloads and checks published LFS SHA256 hashes. It downloads the model repository's current `main` and records metadata in `download-manifest.json`; it is not pinned to an immutable revision. Keep that manifest if you need to track your exact download. Inference uses local files and does not automatically fetch missing assets. The saved synthetic Wizard reference is included under `assets/voices/wizard/`; its profile verifies the audio hash. VoiceDesign is optional and only needed to design a different voice (`python -m voice download-design`).
 
 ## Optional browser preview
 
@@ -50,7 +50,7 @@ Open the printed local URL. The old preview expects separately supplied audio at
 ## Troubleshooting
 
 - Missing module: run the matching install command with the same environment's Python used to run the module.
-- Missing `media/qwen/VoiceDesign`: finish the explicit model download before inference.
+- Missing `media/qwen/Base`: finish the explicit model download before inference.
 - Out of GPU memory: close other GPU applications; the runner already decodes on CPU. There is no supported CPU mode for full `voice narrate`.
 - Existing output: choose a new filename. Narration, animation, assembly, preparation and packaging preserve finished outputs.
 - Missing historical WAV or report: skip `voice rebuild` and use the fresh-clone audition/narration route in the voice guide.

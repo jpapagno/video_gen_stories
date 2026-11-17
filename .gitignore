@@ -11,10 +11,15 @@ public/media/
 .env.*
 !.env.example
 outputs/sleep-story/
+outputs/voice/
+# Local Codex execution event logs are not source assets.
+**/events.jsonl
 transcripts/runtime/
 
 # Generated media and local process artifacts at any depth
 *.wav
+# Small, approved synthetic speaker reference is a required production asset.
+!assets/voices/wizard/reference.wav
 *.mp3
 *.mp4
 *.webm

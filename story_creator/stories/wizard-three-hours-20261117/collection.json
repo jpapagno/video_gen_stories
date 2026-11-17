@@ -1,0 +1,53 @@
+{
+  "status": "drafts_complete",
+  "target_minutes": 180,
+  "original_audio_seconds": 1636.92,
+  "measured_words_per_minute": 139.83578916501722,
+  "total_words": 26832,
+  "estimated_total_minutes": 191.88,
+  "narration_rendered": false,
+  "stories": [
+    {
+      "title": "The Last Pot of Lemon Balm",
+      "file": "story_creator\\stories\\wizard-three-hours-20261117\\01-the-last-pot-of-lemon-balm\\fixed-story.txt",
+      "words": 3815,
+      "estimated_minutes": 27.28,
+      "sha256": "09dcfec7d26b5c51f6b878311d5bd4683d1d4e1ec4c4cdd32cc696112ef0facc"
+    },
+    {
+      "title": "The Window Seat",
+      "file": "story_creator\\stories\\wizard-three-hours-20261117\\02-the-window-seat\\fixed-story.txt",
+      "words": 5036,
+      "estimated_minutes": 36.01,
+      "sha256": "3fd68a27a69531ad6799fc04a4c0b550f496f69e2f09972dfb04d33a82b334ac"
+    },
+    {
+      "title": "The Evening Post",
+      "file": "story_creator\\stories\\wizard-three-hours-20261117\\03-the-evening-post\\fixed-story.txt",
+      "words": 4353,
+      "estimated_minutes": 31.13,
+      "sha256": "a9397209aed94f4ce85e156fbc42f21d7d78c4c0a612cc5df2b8303ce23ccc2d"
+    },
+    {
+      "title": "A Shelf for Small Things",
+      "file": "story_creator\\stories\\wizard-three-hours-20261117\\04-a-shelf-for-small-things\\fixed-story.txt",
+      "words": 4253,
+      "estimated_minutes": 30.41,
+      "sha256": "c5078e64ffec2b2cc4fca54682017e821cb6ec1a851e8a694b4efde92747b675"
+    },
+    {
+      "title": "The Quiet Table",
+      "file": "story_creator\\stories\\wizard-three-hours-20261117\\05-the-quiet-table\\fixed-story.txt",
+      "words": 4416,
+      "estimated_minutes": 31.58,
+      "sha256": "210f923e29988acac84f63624684724a166340c8815df371f1f4cfed2fd983e2"
+    },
+    {
+      "title": "The Last Page of the Day",
+      "file": "story_creator\\stories\\wizard-three-hours-20261117\\06-the-last-page-of-the-day\\fixed-story.txt",
+      "words": 4959,
+      "estimated_minutes": 35.46,
+      "sha256": "5e0b05b91523f339fa53ff638f0f166b9cb6992ae2104676300762a523794430"
+    }
+  ]
+}

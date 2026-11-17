@@ -20,7 +20,7 @@ Listenability, ending completeness and names need human review. See [story creat
 .venv-qwen\Scripts\python -m voice narrate episodes/my-episode/fixed-story.txt --profile wizard --out outputs/voice/my-episode.wav
 ```
 
-Listen to the preview before the full run. See [voice tuning](../voice/README.md) to change the narrator. Failed renders can resume by rerunning the same command with unchanged text/profile/output while the final WAV is absent.
+Every chunk uses the same pinned Wizard V2 recording and clone prompt. Listen to the preview before the full run. See [voice profiles](../voice/README.md) to change the narrator. Failed renders can resume by rerunning the same command with unchanged text/profile/output while the final WAV is absent. Old VoiceDesign caches are not reused; choose a new filename when re-rendering older episodes with the fixed speaker.
 
 ## 3. Make the visual loop
 
