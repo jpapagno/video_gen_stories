@@ -1,6 +1,41 @@
 """Independent, periodic rain, firelight and foliage layers."""
 import numpy as np
-from scipy.ndimage import gaussian_filter, shift
+from scipy.ndimage import distance_transform_edt, gaussian_filter, map_coordinates, shift
+
+
+class LandscapeMotion:
+    def __init__(self, image, polygon, effect):
+        h, w = image.shape[:2]
+        vertices = np.asarray(polygon) * [w, h]
+        left, top = np.floor(vertices.min(axis=0)).astype(int)
+        right, bottom = np.ceil(vertices.max(axis=0)).astype(int)
+        self.roi = np.s_[top:bottom, left:right]
+        self.patch = image[self.roi]
+        self.y, self.x = np.mgrid[:bottom-top, :right-left].astype(np.float32)
+        mask = np.zeros(self.x.shape, dtype=bool)
+        x, y = self.x + left, self.y + top
+        for (ax, ay), (bx, by) in zip(vertices, np.roll(vertices, -1, axis=0)):
+            if ay != by:
+                mask ^= ((ay > y) != (by > y)) & (x < ax + (y - ay) * (bx - ax) / (by - ay))
+        self.mask = np.clip(distance_transform_edt(mask) / 15, 0, 1).astype(np.float32)
+        self.effect = effect
+        self.scale = w / 1920
+
+    def apply(self, frame, angle):
+        if self.effect == "clouds":
+            dx = self.scale * (19 * np.sin(angle) + 4 * np.sin(2 * angle + self.y / 85))
+            dy = 1.5 * self.scale * np.sin(angle + self.x / 105)
+        else:
+            depth = .4 + .6 * self.y / self.y.shape[0]
+            dx = self.scale * depth * (5 * np.sin(3 * angle + self.y / 4) +
+                                      2 * np.sin(5 * angle + self.x / 46 + self.y / 7))
+            dy = self.scale * depth * np.sin(4 * angle + self.y / 5 + self.x / 38)
+        coords = (self.y + dy * self.mask, self.x + dx * self.mask)
+        patch = frame[self.roi]
+        for channel in range(3):
+            original = self.patch[:, :, channel]
+            moved = map_coordinates(original, coords, order=1, mode="nearest", prefilter=False)
+            patch[:, :, channel] += (moved - original) * self.mask
 
 
 class SceneLayers:
@@ -8,6 +43,8 @@ class SceneLayers:
         self.base = image.astype(np.float32)
         self.height, self.width = image.shape[:2]
         self.config = config
+        self.landscape = [LandscapeMotion(self.base, polygon, effect)
+                          for effect, polygon in config.get("landscape_motion", {}).items()]
         h, w = self.height, self.width
         yy, xx = np.mgrid[:h, :w]
         x, y = xx / w, yy / h
@@ -44,6 +81,8 @@ class SceneLayers:
         phase = phase % 1.0
         angle = 2 * np.pi * phase
         frame = self.base.copy()
+        for motion in self.landscape:
+            motion.apply(frame, angle)
         sway = self.config["fern_sway_pixels"] * np.sin(angle)
         if abs(sway) > 1e-6:
             moved = shift(self.fern, (0, sway, 0), order=1, mode="nearest", prefilter=False)
@@ -52,12 +91,16 @@ class SceneLayers:
         # Light flickers locally, rather than pulsing brightness over the whole scene.
         flutter = .52 + .22 * np.sin(3 * angle) + .15 * np.sin(7 * angle + .8) + .11 * np.sin(11 * angle + 1.7)
         patch = frame[self.glow_roi]
-        patch += self.halo[:, :, None] * np.array([13, 7, 1], np.float32) * flutter
+        gain = self.config.get("lantern_flicker_gain", 1)
+        patch += self.halo[:, :, None] * np.array([13, 7, 1], np.float32) * flutter * gain
         bend = .0018 * np.sin(5 * angle) + .0007 * np.sin(13 * angle)
         flame_height = .013 + .002 * np.sin(7 * angle + .5)
         flame = np.exp(-(((self.gx - bend * np.clip(-self.gy / .025, 0, 1)) / .0038) ** 2
                          + ((self.gy + .005) / flame_height) ** 2) * 1.8)
-        patch += flame[:, :, None] * np.array([62, 36, 9], np.float32) * (.65 + .35 * flutter)
+        patch += flame[:, :, None] * np.array([62, 36, 9], np.float32) * (.65 + .35 * flutter) * gain
+
+        if not self.rain_x.size:
+            return np.clip(frame, 0, 255).astype(np.uint8)
 
         # Thin falling streaks: sparse splatting at half resolution, softly blended.
         rh, rw = self.height // 2, self.width // 2

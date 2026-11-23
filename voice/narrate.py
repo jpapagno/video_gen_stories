@@ -6,7 +6,7 @@ import os
 import re
 from pathlib import Path
 
-from .speaker import load_profile, model_fingerprint, clone_prompt
+from .speaker import load_profile, load_profile_file, model_fingerprint, clone_prompt
 
 
 os.environ.setdefault("HF_HUB_OFFLINE", "1")
@@ -36,12 +36,15 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("input", type=Path)
     parser.add_argument("--out", type=Path, required=True)
-    parser.add_argument("--profile", default="wizard", help="Saved voice profile (default: wizard)")
+    profiles = parser.add_mutually_exclusive_group()
+    profiles.add_argument("--profile", default="wizard", help="Saved voice profile (default: wizard)")
+    profiles.add_argument("--profile-file", type=Path, help="Fixed voice profile with a local reference")
     parser.add_argument("--chunk-words", type=int, default=90, help="Maximum words per resumable chunk")
     parser.add_argument("--preview-chunks", type=int, help="Render only the first N chunks")
     parser.add_argument("--plan-only", action="store_true", help="Check text/chunking without loading the model")
     args = parser.parse_args()
-    profile = load_profile(args.profile)
+    profile = load_profile_file(args.profile_file) if args.profile_file else load_profile(args.profile)
+    profile_name = str(args.profile_file) if args.profile_file else args.profile
     if not 10 <= args.chunk_words <= 180:
         parser.error("--chunk-words must be between 10 and 180")
     text = args.input.read_text(encoding="utf-8")
@@ -53,7 +56,7 @@ def main():
     if not parts:
         parser.error("Input contains no narration text")
     print(f"{len(parts)} chunks; {sum(len(p.split()) for p in parts)} words", flush=True)
-    print(f"Voice profile: {args.profile} ({profile['display_name']}); fixed-reference cloning", flush=True)
+    print(f"Voice profile: {profile_name} ({profile['display_name']}); fixed-reference cloning", flush=True)
     if args.plan_only:
         return
     import numpy as np
@@ -65,7 +68,7 @@ def main():
         raise RuntimeError("CUDA is unavailable in this Python environment; use .venv-qwen")
     fingerprint = model_fingerprint(profile)
     recipe = {"workflow": "fixed-speaker-v1", "chunks": parts, "profile": profile,
-              "selected_profile": args.profile, "model": profile["model"], "model_fingerprint": fingerprint,
+              "selected_profile": profile_name, "model": profile["model"], "model_fingerprint": fingerprint,
               "max_new_tokens": 2200, "temperature": .7, "top_p": .9, "seed": 42,
               "non_streaming_mode": True,
               "note": "One pinned speaker prompt reused for every chunk; expression may still vary."}

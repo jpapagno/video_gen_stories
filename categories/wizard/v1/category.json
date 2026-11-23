@@ -1,0 +1,9 @@
+{
+  "story_prompt": "story-prompt.txt",
+  "artwork": "artwork.png",
+  "animation": "animation.json",
+  "voice": "voice.json",
+  "intro_direction": "Welcome listeners to Sleepy Storykeeper, invite them to settle comfortably and quietly establish the location of this Hogwarts bedtime story.",
+  "packaging_direction": "Use Hogwarts or Harry Potter where the setting supports it. Highlight a specific cozy mystery or hidden detail. Keep promises gentle and describe the story as original and unofficial.",
+  "words_per_minute": 160
+}

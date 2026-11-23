@@ -1,45 +1,53 @@
 # Sleepy Storykeeper
 
-A modular toolkit for turning a written bedtime story into a narrated ambient video, with prompts for the story, scene artwork, thumbnail, title and description.
+Turn a bedtime-story brief into a narrated ambient video. [`video_pipeline.py`](video_pipeline.py) is the entry point for onboarding a category and producing episodes from it.
 
 ![Sleepy Storykeeper banner](sleepy-storykeeper-banner.png)
 
-## The workflow
+## Setup
 
-```text
-Story prompt -> GPT story -> prepared transcript -> local Qwen narration (WAV)
-Scene prompt -> generated still -> animated scene loop (MP4)
-Narration + scene loop -> final episode (MP4) -> title, description and thumbnail
-```
+Follow the [installation guide](docs/installation.md). Run the commands below in PowerShell from the repository root. Generation uses the signed-in Codex CLI for GPT writing and the separate Qwen environment with an NVIDIA CUDA GPU for narration.
 
-These are separate steps you run and review. There is no single command that generates and publishes an entire episode.
+## 1. Onboard a category
 
-| Module | Purpose | Input -> output | Instructions |
-| --- | --- | --- | --- |
-| Story / transcript (`story_creator`) | Write a story with your preferred GPT setup, then prepare it for speech | Prompt -> raw text -> prepared text | [Story guide](story_creator/README.md) |
-| Voice (`voice`) | Run Qwen3-TTS locally and tune narrator direction | Prepared text + voice profile -> WAV | [Voice guide](voice/README.md) |
-| Video creation (`animation`) | Animate a scene image with subtle rain, light and foliage | Still + scene preset -> silent loop | [Video creation guide](animation/README.md) |
-| Stitching (`video_assembly`) | Repeat the loop under narration and export the episode | MP4 loop + WAV -> final MP4 | [Assembly guide](video_assembly/README.md) |
-| Packaging (`video_packaging`) | Prepare GPT instructions for titles, description and thumbnail concepts | Story + episode facts -> packaging prompt -> reviewed assets | [Packaging guide](video_packaging/README.md) |
-
-## Install and make your first episode
-
-Start with [installation](docs/installation.md), then follow the [complete walkthrough](docs/walkthrough.md). Commands use Windows PowerShell, run from the repository root. Story preparation, animation, packaging and assembly run on CPU. The current full narration runner requires an NVIDIA CUDA GPU and a separate Python environment. GPT writing and image generation are manual steps in your chosen model interface; no GPT API key is required by this workflow.
-
-Your preferred writing setup is **GPT Sol 6.1, Light**. That is a manual model selection preference, not an API model identifier implemented by this project. The optional local Qwen story writer remains available.
-
-## What is included
-
-Source code, reusable prompts, voice profiles, scene presets, sample stories, artwork and small experimental reports. Generated WAV/MP4 files, model weights, downloaded runtimes, environments, caches and secrets are excluded. Download the voice model and regenerate outputs using the guides. Reference-dependent historical voice-cleanup commands need local artifacts that are not included.
-
-The `transcripts/` directory contains older local-writing experiments; new stories start in `story_creator/`. The `scripts/` directory contains compatibility launchers and earlier audio/video studies. The Three.js/Vite preview in `src/` is an optional earlier music-video experiment: see [its original instructions](docs/legacy-music-video.md). It is separate from the bedtime-video pipeline.
-
-## Checks
+A category bundles the story prompt, fixed voice reference, scene artwork, animation settings, and directions for the intro and YouTube packaging. Start with the [Wizard category config](categories/wizard/v1/category.json) or use an existing category as a template. Wizard v1 is already available for production.
 
 ```powershell
-.venv\Scripts\python -m unittest story_creator.test_prepare voice.test_text voice.test_status transcripts.test_text_metrics transcripts.test_pipeline animation.test_layers
-npm ci
-npm run build
+.venv\Scripts\python video_pipeline.py onboard wizard --version v2 --config categories/wizard/v1/category.json --brief "A lantern left burning in a quiet Hogwarts observatory" --background
+.venv\Scripts\python video_pipeline.py status RUN_ID
 ```
 
-Review the narration and final video yourself before publishing. Narration now reuses a pinned Wizard V2 speaker reference with Qwen's Base cloning model; expression can still vary, so a preview remains important. Actual runtime comes from the rendered WAV, not a word-count estimate. No uploader, music mixer or caption generator is included.
+The first command prints a run ID and folder. Once status reaches `review`, read the audition story and copy, listen to the intro and narration, watch the loop across its seam, and inspect the thumbnail. If the audition passes, approve that run to save the category version under `categories/CATEGORY/VERSION`.
+
+```powershell
+.venv\Scripts\python video_pipeline.py approve RUN_ID
+```
+
+## 2. Produce an episode
+
+Supply an approved category and one brief. The example uses Wizard v1 and targets about 20 minutes. Pass `--version` to select another approved version.
+
+```powershell
+.venv\Scripts\python video_pipeline.py produce wizard --brief "A forbidden observatory opens after the rain" --minutes 20 --background
+.venv\Scripts\python video_pipeline.py status RUN_ID
+```
+
+Python snapshots the approved category and launches GPT writing and animation in parallel. The worker uses the fixed clone for the narration and intro, renders a loop from the category artwork, adds a story-specific hook to the thumbnail, and writes the title and description. The run reaches `review` when those assets are ready together under `outputs/pipeline/RUN_ID`. Use the measured WAV duration in the status report when reviewing timing.
+
+After reviewing the assets, combine that same run. The pipeline checks the reviewed files against their saved hashes and writes `final.mp4` and `final-description.txt` in the run folder.
+
+```powershell
+.venv\Scripts\python video_pipeline.py combine RUN_ID
+```
+
+## Reference
+
+- [Pipeline guide](docs/pipeline.md) covers category inputs, review, and resuming a failed run.
+- [Manual walkthrough](docs/walkthrough.md) covers the individual story, voice, animation, packaging, and assembly tools.
+- [Legacy music-video experiment](docs/legacy-music-video.md) covers the optional Three.js/Vite preview in `src/`.
+
+Run the Python test suite with:
+
+```powershell
+.venv\Scripts\python -m unittest discover
+```

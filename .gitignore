@@ -43,3 +43,6 @@ outputs/*.jpg
 !outputs/packaging/lemon-balm/thumbnail-source.png
 !outputs/packaging/wizard-collection/thumbnail-harry-potter-challenge.jpg
 !outputs/packaging/wizard-collection/thumbnail-harry-potter-challenge-source.png
+
+/outputs/pipeline/
+!/categories/wizard/v1/reference.wav

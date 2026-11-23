@@ -56,10 +56,16 @@ def main():
                 process.wait()
             raise
     temporary.replace(output)
+    effects = ["local lantern flame and glow"]
+    if config["rain_drops"] and config["rain_strength"]:
+        effects.append("glass-masked moving rain")
+    if config["fern_sway_pixels"]:
+        effects.append("foreground fern sway")
+    effects.extend(config.get("landscape_motion", {}))
     report = {"scene": config, "source_sha256": hashlib.sha256(image.read_bytes()).hexdigest(),
               "frames": frame_count, "elapsed_seconds": round(time.monotonic() - start, 2),
               "loop_endpoint_pixels_equal": True, "camera": "locked", "audio": False,
-              "effects": ["glass-masked moving rain", "local lantern flame and glow", "foreground fern sway"],
+              "effects": effects,
               "renderer": "CPU numpy/scipy compositing; ffmpeg libx264"}
     output.with_suffix(".json").write_text(json.dumps(report, indent=2), encoding="utf-8")
     print(output.resolve(), flush=True)

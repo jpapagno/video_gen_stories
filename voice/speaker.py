@@ -18,14 +18,20 @@ def sha256(path):
 def load_profile(name):
     if not re.fullmatch(r"[a-z0-9-]+", name):
         raise ValueError("Profile must be a saved lowercase profile name")
-    profile = json.loads((ROOT / "voice/profiles" / f"{name}.json").read_text(encoding="utf-8"))
+    return load_profile_file(ROOT / "voice/profiles" / f"{name}.json", reference_root=ROOT)
+
+
+def load_profile_file(path, *, reference_root=None):
+    profile = json.loads(path.read_text(encoding="utf-8-sig"))
     if not isinstance(profile, dict) or profile.get("engine") != "voice_clone":
         raise ValueError("Narration requires a fixed voice_clone profile; VoiceDesign is audition-only")
     if not profile.get("reference_text", "").strip():
         raise ValueError("The exact reference transcript is required")
-    reference = ROOT / profile["reference_audio"]
+    reference = (reference_root or path.parent) / profile["reference_audio"]
     if sha256(reference) != profile["reference_sha256"]:
         raise ValueError("Reference audio changed; refusing to silently change speaker identity")
+    if reference_root is None:
+        profile["reference_audio"] = str(reference.resolve())
     return profile
 
 

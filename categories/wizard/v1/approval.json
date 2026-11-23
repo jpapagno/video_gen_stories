@@ -1,0 +1,11 @@
+{
+  "source": "Existing Wizard V2 voice, bedtime story prompt and Hogwarts corridor artwork",
+  "category_files": {
+    "animation.json": "421520facf2d594f078af87e4152fcf688c98f458cc0540b5235860d993e5ab9",
+    "artwork.png": "56194a6349ffcfed1cafda845cd409814fd6d1de16292a3e3e39b167ab2d7885",
+    "category.json": "8a6abe3050c73b008a6f975d2872273f20f49288806ef9cfd78a1163fb25accc",
+    "reference.wav": "8b58826f1f0374391b9546d305cff354e7e3a16a3c1efb238ea431fa774cf1bd",
+    "story-prompt.txt": "df518d2920df14ab830a6405c67aa57040a625321d6d4fd7b65b70fbbb84f423",
+    "voice.json": "4074c31b9f75fe684395b4cc1df5d9a089622652b5404f292783e96bb37d0c8b"
+  }
+}
